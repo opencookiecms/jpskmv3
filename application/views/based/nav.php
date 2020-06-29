@@ -13,60 +13,13 @@
 								</li>
 								<li aria-haspopup="true">
 									<a href="#" class="sub-icon">
-										<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+									<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
 										Kontraktor <i class="fa fa-angle-down horizontal-icon"></i>
 									</a>
-									<div class="horizontal-megamenu clearfix">
-										<div class="container">
-											<div class="mega-menubg">
-												<div class="row">
-													<div class="col-lg-3 col-md-12 col-xs-12 link-list">
-														<ul>
-															<li><a href="chat.html">Chat</a></li>
-															<li><a href="chat2.html">Chat 02</a></li>
-															<li><a href="chat3.html">Chat 03</a></li>
-															<li><a href="contact-list.html">Contact list</a></li>
-															<li><a href="contact-list2.html">Contact list 02</a></li>
-															<li><a href="file-manager.html">File Manager</a></li>
-															<li><a href="file-manager-list.html">File Manager 02</a></li>
-														</ul>
-													</div>
-													<div class="col-lg-3 col-md-12 col-xs-12 link-list">
-														<ul>
-															<li><a href="todo-list.html">Todo List</a></li>
-															<li><a href="todo-list2.html">Todo List 02</a></li>
-															<li><a href="todo-list3.html">Todo List 03</a></li>
-															<li><a href="users-list-1.html">User List 01</a></li>
-															<li><a href="users-list-2.html">User List 02</a></li>
-															<li><a href="users-list-3.html">User List 03</a></li>
-															<li><a href="users-list-4.html">User List 04</a></li>
-														</ul>
-													</div>
-													<div class="col-lg-3 col-md-12 col-xs-12 link-list">
-														<ul>
-															<li><a href="calendar.html"> Calendar</a></li>
-															<li><a href="dragula.html"> Dragula Card</a></li>
-															<li><a href="cookies.html"> Cookies</a></li>
-															<li><a href="image-comparison.html"> Image Comparision</a></li>
-															<li><a href="img-crop.html"> Image Crop</a></li>
-															<li><a href="page-sessiontimeout.html"> Page-sessiontimeout</a></li>
-															<li><a href="notify.html"> Notifications</a></li>
-														</ul>
-													</div>
-													<div class="col-lg-3 col-md-12 col-xs-12 link-list">
-														<ul>
-															<li><a href="sweetalert.html"> Sweet alerts</a></li>
-															<li><a href="rangeslider.html"> Range slider</a></li>
-															<li><a href="counters.html"> Counters</a></li>
-															<li><a href="loaders.html"> Loaders</a></li>
-															<li><a href="time-line.html"> Time Line</a></li>
-															<li><a href="rating.html"> Rating</a></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									<ul class="sub-menu">
+										<li><a href="<?php echo site_url('kontraktor') ?>">Senarai Kontraktor</a></li>
+										<li><a href="advanced-forms.html">Maklumat Syarikat</a></li>
+									</ul>
 								</li>
 								<li aria-haspopup="true">
 									<a href="#" class="sub-icon">
@@ -278,7 +231,7 @@
 								<li aria-haspopup="true">
 									<a href="#" class="sub-icon">
 										<svg class="hor-icon" x="144" y="240" viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" focusable="false"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></svg>
-										Icons <i class="fa fa-angle-down horizontal-icon"></i>
+										Setting <i class="fa fa-angle-down horizontal-icon"></i>
 									</a>
 									<ul class="sub-menu">
 										<li aria-haspopup="true"><a href="icons.html">Font Awesome</a></li>
