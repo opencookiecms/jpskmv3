@@ -22,7 +22,19 @@ class Kontraktorcontroller extends CI_Controller {
 		$this->load->view('pages/kontraktor.php',$data);
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
-    }
+	}
+
+	public function kdetail($id="")
+	{
+		$data['kdetail']=$this->Kmodel->getKontraktorId($id);
+
+		$this->load->view('based/header.php');
+		$this->load->view('based/appheader.php');
+		$this->load->view('based/nav.php');
+		$this->load->view('pages/kontraktor_detail.php',$data);
+		$this->load->view('based/footer.php');
+		$this->load->view('based/end.php');
+	}
 
 }
 

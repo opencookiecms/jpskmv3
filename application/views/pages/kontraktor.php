@@ -118,14 +118,27 @@
 												<tbody>
 												<?php $bil=0;?>
           										<?php foreach ($get_kontraktor as $row): $bil++?>
+												
 													<tr>
 														<td><?php echo $bil ?></td>
-														<td>Picture</td>
-														<td class="font-weight-bold"><?php echo $row->konName?></td>
-														<td>Watch</td>
-														<td class="font-weight-bold">$13,206</td>
-														<td><i class="fa fa-caret-up text-danger mr-1"></i>.01%</td>
-														<td><i class="fa fa-caret-up text-danger mr-1"></i>.01%</td>
+														<td><span class="avatar avatar-xl brround" style="background-image: url(<?php base_url()?>assets/userimage/<?php echo $row->konImage ?>)"></span></td>
+														<td class="font-weight-bold"><a href="<?php echo site_url('kontraktor-detail/'.$row->kontraktorId)?>"><?php echo $row->konName?></a></td>
+														<td><?php echo $row->konPengurus?></td>
+														<td class="font-weight-bold"><?php echo $row->NoTelPengurus?></td>
+														<td>
+														<?php 
+															$endDate = $row->sijilJPSTamat;	
+														 ?>
+														 
+														 <?php if (date("Y-m-d") < $endDate) { ?>
+															<span class="badge badge-success badge-pill p-2">Berdaftar</span>
+                                               			 <?php } else{?>
+															<span class="badge badge-danger badge-pill p-2">Tidak Berdaftar</span>
+                                               			 <?php } ?>
+														</td>
+														<td>
+														<a href="" class="btn btn-primary" role="button"><i class="fa fa-edit" aria-hidden="true"></i></a> <a href="" class="btn btn-info" role="button"><i class="fa fa-print" aria-hidden="true"></i></a>  <a href="" class="btn btn-danger" role="button"><i class="fa fa-times" aria-hidden="true"></i></a>  
+														</td>
 													</tr>
 												<?php endforeach; ?>
 												</tbody>

@@ -52,5 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'dashboardcontroller';
 $route['jps-administrator']="admincontroller/adminpanel";
 $route['kontraktor'] = "Kontraktorcontroller";
+$route['kontraktor-detail/(:num)'] = "Kontraktorcontroller/kdetail/$1";
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

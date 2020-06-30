@@ -19,6 +19,17 @@ class Kmodel extends CI_Model {
         return $query->result();
    }
 
+   public function getKontraktorId($id)
+   {
+
+        $this->db->select('*');
+        $this->db->from('kontraktor');
+        $this->db->where('kontraktorId', $id);
+        $query = $this->db->get();
+
+        return $query->result();
+   }
+
 
     
 
