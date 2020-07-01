@@ -30,6 +30,44 @@ class Kmodel extends CI_Model {
         return $query->result();
    }
 
+   public function ktotal()
+   {
+   
+     $this->load->helper('url');
+
+     $this->db->select('*');
+     $this->db->from('kontraktor');
+
+     $c = $this->db->get()->num_rows();
+     return $c;
+   }
+
+   public function kdaftartotal()
+   {
+
+   }
+   public function kxdaftartotal()
+   {
+
+   }
+
+   ///Add kontraktor
+
+   public function kadd()
+   {
+
+   }
+
+   public function kupdate()
+   {
+
+   }
+
+   public function kdelete()
+   {
+        
+   }
+
 
     
 

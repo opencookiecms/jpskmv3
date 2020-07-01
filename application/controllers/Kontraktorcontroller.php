@@ -15,6 +15,7 @@ class Kontraktorcontroller extends CI_Controller {
     public function index()
     {
 		$data['get_kontraktor']=$this->Kmodel->getKontraktor();
+		$data['get_count']=$this->Kmodel->ktotal();
 
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
@@ -28,6 +29,7 @@ class Kontraktorcontroller extends CI_Controller {
 	{
 		$data['kdetail']=$this->Kmodel->getKontraktorId($id);
 
+
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
@@ -35,6 +37,21 @@ class Kontraktorcontroller extends CI_Controller {
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
 	}
+
+	public function kform($id="")
+	{
+		$data['kdetail']=$this->Kmodel->getKontraktorId($id);	
+		
+		$this->load->view('based/header.php');
+		$this->load->view('based/appheader.php');
+		$this->load->view('based/nav.php');
+		$this->load->view('pages/kontraktor_detail.php',$data);
+		$this->load->view('based/footer.php');
+		$this->load->view('based/end.php');
+	}
+
+
+  
 
 }
 
