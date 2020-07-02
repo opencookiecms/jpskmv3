@@ -7,8 +7,6 @@ class Kontraktorcontroller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->database();
-		$this->load->helper('url');
 		$this->load->model('Kmodel');
 	}
 	
@@ -38,16 +36,19 @@ class Kontraktorcontroller extends CI_Controller {
 		$this->load->view('based/end.php');
 	}
 
-	public function kform($id="")
-	{
-		$data['kdetail']=$this->Kmodel->getKontraktorId($id);	
-		
+	public function kadd()
+	{	
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
-		$this->load->view('pages/kontraktor_detail.php',$data);
+		$this->load->view('pages/kontraktor_form.php');
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
+	}
+
+	public function kupdate()
+	{
+
 	}
 
 

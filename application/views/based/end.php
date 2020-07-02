@@ -41,6 +41,9 @@
 		<script src="<?php echo base_url() ?>assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 		<script src="<?php echo base_url() ?>assets/js/daterange.js"></script>
 
+			<!--Select2 js -->
+		<script src="<?php echo base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/select2.js"></script>
 
 
 		<!-- Index js-->

@@ -68,14 +68,7 @@
 										<h3 class="card-title">Senarai Kontraktor</h3>
 										<div class="card-options">
 											<div class="btn-group ml-5 mb-0">
-												<button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fe fe-plus"></i> Add New Order</button>
-												<div class="dropdown-menu">
-													<a class="dropdown-item" href="#"><i class="fa fa-plus mr-2"></i>Add new Order</a>
-													<a class="dropdown-item" href="#"><i class="fa fa-eye mr-2"></i>View all new tab</a>
-													<a class="dropdown-item" href="#"><i class="fa fa-edit mr-2"></i>Edit Page</a>
-													<div class="dropdown-divider"></div>
-													<a class="dropdown-item" href="#"><i class="fa fa-cog mr-2"></i> Settings</a>
-												</div>
+												<a href="<?php echo site_url('kontraktor-baru')?>" class="btn btn-success"><i class="fe fe-plus"></i>Tambah Baru</a>
 											</div>
 										</div>
 									</div>
@@ -99,7 +92,7 @@
 												
 													<tr>
 														<td><?php echo $bil ?></td>
-														<td><span class="avatar avatar-xl brround" style="background-image: url(<?php base_url()?>assets/userimage/<?php echo $row->konImage ?>)"></span></td>
+														<td><span class="avatar avatar-xl brround" style="background-image: url(<?php base_url() ?>assets/userimage/<?php echo $row->konImage ?>)"></span></td>
 														<td class="font-weight-bold"><a href="<?php echo site_url('kontraktor-detail/'.$row->kontraktorId)?>"><?php echo $row->konName?></a></td>
 														<td><?php echo $row->konPengurus?></td>
 														<td class="font-weight-bold"><?php echo $row->NoTelPengurus?></td>

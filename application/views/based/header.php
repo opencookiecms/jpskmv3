@@ -27,6 +27,9 @@
 		<!-- Animate css -->
 		<link href="<?php echo base_url() ?>assets/css/animated.css" rel="stylesheet" />
 
+		<!-- Select2 css -->
+		<link href="<?php echo base_url() ?>assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
 		<!-- P-scroll bar css-->
 		<link href="<?php echo base_url() ?>assets/plugins/p-scrollbar/p-scrollbar.css" rel="stylesheet" />
 
