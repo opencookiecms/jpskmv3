@@ -18,67 +18,123 @@
 						<!--End Page header-->
                     
                         <div class="row">
-							<div class="col-xl-6 col-lg-12 col-md-12">
+							<div class="col-xl-12 col-lg-12 col-md-12">
 								<div class="card">
 									<div class="card-header">
 										<h3 class="card-title">Billing Information</h3>
 									</div>
 									<div class="card-body">
 										<div class="row">
+
+											<div class="col-sm-4 col-md-4">
+												<div class="form-group">
+													<label class="form-label">Nama Syarikat</label>
+													<input type="text" name="namasyarikat" class="form-control" placeholder="Nama Syarikat">
+												</div>
+											</div>
+											<div class="col-sm-8 col-md-8"></div>
+											<div class="col-sm-4 col-md-4">
+												<div class="form-group">
+													<label class="form-label">Gambar</label>
+													<input class="form-control" name="file" type="file" accept="image/*">
+												</div>
+											</div>
+											<div class="col-sm-6 col-md-6"></div>
 											<div class="col-sm-6 col-md-6">
 												<div class="form-group">
-													<label class="form-label">First Name <span class="text-red">*</span></label>
-													<input type="text" class="form-control" placeholder="First name">
+													<label class="form-label">Alamat</label>
+													<input class="form-control" placeholder="Alamat Syarikat" type="text"  name="konalamat">
 												</div>
 											</div>
+											<div class="col-sm-6 col-md-6"></div>
 											<div class="col-sm-6 col-md-6">
 												<div class="form-group">
-													<label class="form-label">Last Name <span class="text-red">*</span></label>
-													<input type="text" class="form-control" placeholder="Last name">
+													<label class="form-label"></label>
+													<input class="form-control" placeholder="Alamat Syarikat" type="text"  name="konalamatt">
 												</div>
 											</div>
-											<div class="col-md-12">
+											<div class="col-sm-6 col-md-6"></div>
+											<div class="col-sm-6 col-md-6">
 												<div class="form-group">
-													<label class="form-label">Company Name <span class="text-red">*</span></label>
-													<input type="text" class="form-control" placeholder="Company name">
+													<label class="form-label"></label>
+													<input class="form-control" placeholder="Alamat Syarikat" type="text"  name="konalamatd">
 												</div>
 											</div>
-											<div class="col-md-12">
+											<div class="col-sm-6 col-md-6"></div>
+											<div class="col-sm-2 col-md-2">
 												<div class="form-group">
-													<label class="form-label">Email address <span class="text-red">*</span></label>
-													<input type="email" class="form-control" placeholder="Email">
+													<label class="form-label">Poskod</label>
+													<input class="form-control" placeholder="eg:08000" type="text"  name="poskod">
 												</div>
 											</div>
-											<div class="col-md-12">
+											<div class="col-sm-2 col-md-2">
 												<div class="form-group">
-													<label class="form-label">Country <span class="text-red">*</span></label>
-													<select class="form-control custom-select select2">
-														<option value="0">--Select--</option>
-														<option value="1">Germany</option>
-														<option value="2">Canada</option>
-														<option value="3">Usa</option>
-														<option value="4">Aus</option>
+													<label class="form-label">Bandar</label>
+													<input class="form-control" placeholder="eg:Sungai Petani" type="text"  name="Bandar">
+												</div>
+											</div>
+											<div class="col-sm-2 col-md-2">
+												<div class="form-group">
+													<label class="form-label">Daerah</label>
+													<input class="form-control" placeholder="eg:Kuala Muda" type="text"  name="daerah">
+												</div>
+											</div>
+											<div class="col-sm-2 col-md-2">
+												<div class="form-group">
+													<label class="form-label">Negeri</label>
+													<select class="form-control custom-select select2" name="koonNegeri">
+														<option value="Perlis">Perlis</option>
+														<option value="Kedah">Kedah</option>
+														<option value="Kelantan">Kelantan</option>
+														<option value="Perak">Perak</option>
+														<option value="Pahang">Pahang</option>
+														<option value="Terengganu">Terengganu</option>
+														<option value="N.Sembilan">N.Sembilan</option>
+														<option value="Kuala Lumpur">Kuala Lumpur</option>
+														<option value="Sabah">Sabah</option>
+														<option value="Sarawak">Sarawak</option>
+														<option value="Johor">Johor</option>
+														<option value="Melaka">Melaka</option>
+														<option value="Selangor">Selangor</option>
+														<option value="Pulau Pinang">Pulau Pinang</option>
 													</select>
 												</div>
 											</div>
-											<div class="col-md-12">
+										
+											<div class="col-sm-6 col-md-6">
 												<div class="form-group">
-													<label class="form-label">Address <span class="text-red">*</span></label>
-													<input type="text" class="form-control" placeholder="Home Address">
+													<label class="form-label">Telefon Pejabat</label>
+													<input class="form-control" placeholder="04-XXXXXXX" type="text"  name="telefonpejabat">
+												</div>
+											</div>
+										
+										
+								
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Billing Information</h3>
+									</div>
+									<div class="card-body">
+										<div class="row">
+
+											<div class="col-sm-6 col-md-6">
+												<div class="form-group">
+													<label class="form-label">Nama Syarikat</label>
+													<input type="text" name="namasyarikat" class="form-control" placeholder="Nama Syarikat">
 												</div>
 											</div>
 											<div class="col-sm-6 col-md-6">
 												<div class="form-group">
-													<label class="form-label">City <span class="text-red">*</span></label>
-													<input type="text" class="form-control" placeholder="City">
+													<label class="form-label">Gambar</label>
+													<input type="text" class="form-control" placeholder="First name">
 												</div>
 											</div>
-											<div class="col-sm-6 col-md-6">
-												<div class="form-group">
-													<label class="form-label">Postal Code <span class="text-red">*</span></label>
-													<input type="number" class="form-control" placeholder="ZIP Code">
-												</div>
-											</div>
+										
+										
+								
 										</div>
 									</div>
 								</div>
@@ -88,4 +144,6 @@
 						<!-- End Row --
 					</div>
 				</div><!-- end app-content-->
+			</div>
+			</div>
 			</div>
