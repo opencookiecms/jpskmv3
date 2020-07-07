@@ -35,57 +35,11 @@
 										<li><a href="form-treeview.html"> Form Treeview</a></li>
 									</ul>
 								</li>
-								<li aria-haspopup="true"><a href="#" class="sub-icon">
-									<svg class="hor-icon" x="672" y="96" viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" focusable="false"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M8 16H6a2 2 0 01-2-2v0-8a2 2 0 012-2v0h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v0-8a2 2 0 00-2-2v0h-8a2 2 0 00-2 2v8a2 2 0 002 2v0z"></path></svg>
-									Advanced UI <i class="fa fa-angle-down horizontal-icon"></i></a>
-									<ul class="sub-menu">
-										<li aria-haspopup="true" class="sub-menu-sub"><a href="#">Charts</a>
-											<ul class="sub-menu">
-												<li><a href="chart-chartist.html" class="slide-item">Chartjs Charts</a></li>
-												<li><a href="chart-morris.html" class="slide-item"> Morris Charts</a></li>
-												<li><a href="chart-apex.html" class="slide-item"> Apex Charts</a></li>
-												<li><a href="chart-peity.html" class="slide-item"> Pie Charts</a></li>
-												<li><a href="chart-echart.html" class="slide-item"> Echart Charts</a></li>
-												<li><a href="chart-flot.html" class="slide-item"> Flot Charts</a></li>
-												<li><a href="chart-c3.html" class="slide-item">C3 Charts</a></li>
-											</ul>
-										</li>
-										<li aria-haspopup="true" class="sub-menu-sub"><a href="#">Maps</a>
-											<ul class="sub-menu">
-												<li><a href="maps.html" class="slide-item">Vector Maps</a></li>
-												<li><a href="maps2.html" class="slide-item">Leaflet Maps</a></li>
-												<li><a href="maps3.html" class="slide-item">Mapel Maps</a></li>
-											</ul>
-										</li>
-										<li aria-haspopup="true" class="sub-menu-sub"><a href="#">Tables</a>
-											<ul class="sub-menu">
-												<li><a href="tables.html" class="slide-item">Default table</a></li>
-												<li><a href="datatable.html" class="slide-item">Data Table</a></li>
-											</ul>
-										</li>
-										<li aria-haspopup="true" class="sub-menu-sub"><a href="#">Invoice</a>
-											<ul class="sub-menu">
-												<li><a href="invoice-list.html">Invoice list</a></li>
-												<li><a href="invoice-1.html">Invoice 01</a></li>
-												<li><a href="invoice-2.html">Invoice 02</a></li>
-												<li><a href="invoice-3.html">Invoice 03</a></li>
-												<li><a href="invoice-add.html">Add Invoice</a></li>
-												<li><a href="invoice-edit.html">Edit Invoice</a></li>
-											</ul>
-										</li>
-										<li aria-haspopup="true" class="sub-menu-sub"><a href="#">Shop</a>
-											<ul class="sub-menu">
-												<li><a href="shop.html"> Products</a></li>
-												<li><a href="shop-des.html">Product Details</a></li>
-												<li><a href="cart.html"> Shopping Cart</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
+						
 								<li aria-haspopup="true">
 									<a href="#" class="sub-icon">
 										<svg class="hor-icon" x="672" y="96" viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" focusable="false"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M8 16H6a2 2 0 01-2-2v0-8a2 2 0 012-2v0h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v0-8a2 2 0 00-2-2v0h-8a2 2 0 00-2 2v8a2 2 0 002 2v0z"></path></svg>
-										Elements  <i class="fa fa-angle-down horizontal-icon"></i>
+										Maklumat Perolehan  <i class="fa fa-angle-down horizontal-icon"></i>
 									</a>
 									<div class="horizontal-megamenu clearfix">
 										<div class="container">
@@ -155,7 +109,7 @@
 								</li>
 								<li aria-haspopup="true"><a href="#" class="sub-icon ">
 									<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-									Pages <i class="fa fa-angle-down horizontal-icon"></i></a>
+									Laporan <i class="fa fa-angle-down horizontal-icon"></i></a>
 									<div class="horizontal-megamenu clearfix">
 										<div class="container">
 											<div class="mega-menubg">
@@ -231,7 +185,7 @@
 								<li aria-haspopup="true">
 									<a href="#" class="sub-icon">
 										<svg class="hor-icon" x="144" y="240" viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" focusable="false"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></svg>
-										Setting <i class="fa fa-angle-down horizontal-icon"></i>
+										Konfigurasi <i class="fa fa-angle-down horizontal-icon"></i>
 									</a>
 									<ul class="sub-menu">
 										<li aria-haspopup="true"><a href="icons.html">Font Awesome</a></li>

@@ -1,8 +1,31 @@
 $(document).ready(function() {
 	'use strict';
+
 	$('.select2').select2({
 		minimumResultsForSearch: Infinity
 	});
+		
+	$('.select21').select2({
+		minimumResultsForSearch: Infinity,
+		width: 300
+	});
+	$('.select22').select2({
+		minimumResultsForSearch: Infinity,
+		width: 300
+	});
+	$('.select23').select2({
+		minimumResultsForSearch: Infinity,
+		width: 300
+	});
+	$('.select24').select2({
+		minimumResultsForSearch: Infinity,
+		width: 300
+	});
+	$('.select25').select2({
+		minimumResultsForSearch: Infinity,
+		width: 300
+	});
+
 	// Select2 by showing the search
 	$('.select2-show-search').select2({
 		minimumResultsForSearch: ''

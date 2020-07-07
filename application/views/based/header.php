@@ -50,6 +50,11 @@
 		<!--Daterangepicker css-->
 		<link href="<?php echo base_url() ?>assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
 
+				<!-- Forn-wizard css-->
+		<link href="<?php echo base_url() ?>assets/plugins/forn-wizard/css/forn-wizard.css" rel="stylesheet" />
+		<link href="<?php echo base_url() ?>assets/plugins/formwizard/smart_wizard.css" rel="stylesheet">
+		<link href="<?php echo base_url() ?>assets/plugins/formwizard/smart_wizard_theme_dots.css" rel="stylesheet">
+
 	</head>
 
 	

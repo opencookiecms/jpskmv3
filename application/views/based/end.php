@@ -41,9 +41,7 @@
 		<script src="<?php echo base_url() ?>assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 		<script src="<?php echo base_url() ?>assets/js/daterange.js"></script>
 
-			<!--Select2 js -->
-		<script src="<?php echo base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
-		<script src="<?php echo base_url() ?>assets/js/select2.js"></script>
+
 
 
 		<!-- Index js-->
@@ -64,9 +62,21 @@
 		<script src="<?php echo base_url() ?>assets/plugins/datatable/responsive.bootstrap4.min.js"></script>
 		<script src="<?php echo base_url() ?>assets/js/datatables.js"></script>
 
+		
+		<!-- Jquery.steps js -->
+		<script src="<?php echo base_url() ?>assets/plugins/jquery-steps/jquery.steps.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/plugins/parsleyjs/parsley.min.js"></script>
+
+		
+		<script src="<?php echo base_url() ?>assets/plugins/accordion-Wizard-Form/jquery.accordion-wizard.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/form-wizard.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/form-wizard2.js"></script>
+
 		<!--Counters -->
 		<script src="<?php echo base_url() ?>assets/plugins/counters/counterup.min.js"></script>
 		<script src="<?php echo base_url() ?>assets/plugins/counters/waypoints.min.js"></script>
+
+
 
 		<!-- simplebar JS -->
 		<script src="<?php echo base_url() ?>assets/plugins/simplebar/js/simplebar.min.js"></script>
@@ -74,6 +84,10 @@
 		<!--Chart js -->
 		<script src="<?php echo base_url() ?>assets/plugins/chart/chart.bundle.js"></script>
 		<script src="<?php echo base_url() ?>assets/plugins/chart/utils.js"></script>
+
+				<!--Select2 js -->
+				<script src="<?php echo base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/select2.js"></script>
 
 		<!-- Custom js-->
 		<script src="<?php echo base_url() ?>assets/js/custom.js"></script>
