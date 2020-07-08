@@ -367,88 +367,269 @@
 											<section>
 											<div class="row">
 
-												<div class="col-sm-4 col-md-6">
+												<div class="col-sm-3 col-md-3">
 													<div class="form-group">
-														<label class="form-label">Rakan Konsi (1)</label>
-														<input type="text" name="rakansatu" class="form-control" placeholder="cth:Salah">
+														<label class="form-label">Tarikh Permohonan</label>
+														<input type="text" name="rakansatu" class="form-control">
 													</div>
 												</div>
-												<div class="col-sm-4 col-md-3">
+												<div class="col-sm-3 col-md-3">
 													<div class="form-group">
-														<label class="form-label">No Kad Pengenalan</label>
-														<input type="text" name="rakankadsatu" class="form-control" placeholder="cth:83XXXX-XX-XXXX">
+														<label class="form-label">Cas Perkhidmatan (RM)</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
 													</div>
 												</div>
-												<div class="col-sm-4 col-md-3">
+												<div class="col-sm-4 col-md-4">
 													<div class="form-group">
-														<label class="form-label">No Tel</label>
-														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:012-12334456">
+														<label class="form-label">No Reset</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+												<div class="col-sm-2 col-md-2"></div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">No Sijil Pendaftaran</label>
+														<input type="text" name="rakansatu" class="form-control">
+													</div>
+												</div>
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Tarikh Sijil Dikeluarkan</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+													</div>
+												</div>
+												<div class="col-sm-4 col-md-4">
+													<div class="form-group">
+														<label class="form-label">Tarikh Tamat Sijil</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+												<div class="col-sm-2 col-md-2"></div>
+										
+												</div>
+											</section>
+											<h3>Disemak Oleh</h3>
+											<section>
+											<div class="row">
+
+												<div class="col-sm-4 col-md-4">
+													<div class="form-group">
+														<label class="form-label">Disemak oleh</label>
+														<input type="text" name="rakansatu" class="form-control">
+													</div>
+												</div>
+												<div class="col-sm-4 col-md-4">
+													<div class="form-group">
+														<label class="form-label">Disahkan Oleh</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+													</div>
+												</div>
+												<div class="col-sm-4 col-md-4">
+													<div class="form-group">
+														<label class="form-label">Diluluskan Oleh</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
 													</div>
 												</div>
 
-												<div class="col-sm-4 col-md-6">
+												<div class="col-sm-4 col-md-4">
 													<div class="form-group">
-														<label class="form-label">Rakan Konsi (2)</label>
-														<input type="text" name="rakandua" class="form-control" placeholder="cth:Salah">
+														<label class="form-label">Jawatan Penyemak</label>
+														<input type="text" name="rakansatu" class="form-control">
 													</div>
 												</div>
-												<div class="col-sm-4 col-md-3">
+												<div class="col-sm-4 col-md-4">
 													<div class="form-group">
-														<label class="form-label">No Kad Pengenalan</label>
-														<input type="text" name="rakankaddua" class="form-control" placeholder="cth:83XXXX-XX-XXXX">
+														<label class="form-label">Jawatan Pengurus</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
 													</div>
 												</div>
-												<div class="col-sm-4 col-md-3">
+												<div class="col-sm-4 col-md-4">
 													<div class="form-group">
-														<label class="form-label">No Tel</label>
-														<input type="text" name="rakanteldua" class="form-control" placeholder="cth:012-12334456">
-													</div>
-												</div>
-
-
-												<div class="col-sm-4 col-md-6">
-													<div class="form-group">
-														<label class="form-label">Rakan Konsi (3)</label>
-														<input type="text" name="rakantiga" class="form-control" placeholder="cth:Salah">
-													</div>
-												</div>
-												<div class="col-sm-4 col-md-3">
-													<div class="form-group">
-														<label class="form-label">No Kad Pengenalan</label>
-														<input type="text" name="rakankadtiga" class="form-control" placeholder="cth:83XXXX-XX-XXXX">
-													</div>
-												</div>
-												<div class="col-sm-4 col-md-3">
-													<div class="form-group">
-														<label class="form-label">No Tel</label>
-														<input type="text" name="rakanteltiga" class="form-control" placeholder="cth:012-12334456">
-													</div>
-												</div>
-
-												<div class="col-sm-4 col-md-6">
-													<div class="form-group">
-														<label class="form-label">Rakan Konsi (4)</label>
-														<input type="text" name="rakanempat" class="form-control" placeholder="cth:Salah">
-													</div>
-												</div>
-												<div class="col-sm-4 col-md-3">
-													<div class="form-group">
-														<label class="form-label">No Kad Pengenalan</label>
-														<input type="text" name="rakankadempat" class="form-control" placeholder="cth:83XXXX-XX-XXXX">
-													</div>
-												</div>
-												<div class="col-sm-4 col-md-3">
-													<div class="form-group">
-														<label class="form-label">No Tel</label>
-														<input type="text" name="rakantelempat" class="form-control" placeholder="cth:012-12334456">
+														<label class="form-label">Jawatan Penglulus</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
 													</div>
 												</div>
 				
-											
-
-
+										
 												</div>
 											</section>
+											<!--sss->$-->
+											<h3>1:- LPIPM</h3>
+	
+											<section>
+										
+											<div class="row">
+												<div class="col-sm-12 col-md-12"><h4 class="mt-1 mb-4">Lembaga Pembangunan Industri Pembinaan Malaysia (LPIPM)</h4><h6 class="mb-6">a) Sijil Perakuan Pendaftaran Kontraktror (PPK)</h6></div>
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">No Pendaftaran</label>
+														<input type="text" name="rakansatu" class="form-control">
+													</div>
+												</div>
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Tempoh Sah Dari</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+													</div>
+												</div>
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Hingga</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+											   <div class="col-sm-12 col-md-12"><h6 class="mt-4 mb-6">b) Sijil Perolehan Kerja Kerajaan (SPKK)</h6></div>
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">No Pendaftaran</label>
+														<input type="text" name="rakansatu" class="form-control">
+													</div>
+												</div>
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Tempoh Sah Dari</label>
+														<input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+													</div>
+												</div>
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Hingga</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Gred</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-3 col-md-3">
+													<div class="form-group">
+														<label class="form-label">Kategori</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6">
+													<div class="form-group">
+														<label class="form-label">Pengkhususan</label>
+														<input type="text" name="rakantelsatu" class="form-control" placeholder="cth:JPS-2938HS">
+													</div>
+												</div>
+
+										
+											</div>
+											</section>
+											
 										</div>
 									
 								</div>
