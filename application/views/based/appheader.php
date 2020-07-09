@@ -17,17 +17,9 @@
 								</a>
 								<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow animated">
 									<a class="dropdown-item" href="#">
-										App Design Projects
+										Akan Datang
 									</a>
-									<a class="dropdown-item" href="#">
-										Web Design Projects
-									</a>
-									<a class="dropdown-item" href="#">
-										App Development Projects
-									</a>
-									<a class="dropdown-item" href="#">
-										Back-End Projects
-									</a>
+								
 									<div class="text-left pr-5 pl-5 p-2 border-top">
 										<a href="#" class="">View Projects</a>
 									</div>
@@ -43,17 +35,9 @@
 								</a>
 								<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow animated">
 									<a class="dropdown-item" href="#">
-										App Design Projects
+										Akan Datang
 									</a>
-									<a class="dropdown-item" href="#">
-										Web Design Projects
-									</a>
-									<a class="dropdown-item" href="#">
-										App Development Projects
-									</a>
-									<a class="dropdown-item" href="#">
-										Back-End Projects
-									</a>
+								
 									<div class="text-left pr-5 pl-5 p-2 border-top">
 										<a href="#" class="">View Projects</a>
 									</div>
