@@ -76,6 +76,18 @@
 		<script src="<?php echo base_url() ?>assets/plugins/counters/counterup.min.js"></script>
 		<script src="<?php echo base_url() ?>assets/plugins/counters/waypoints.min.js"></script>
 
+		
+		
+		<!-- Datepicker js -->
+		<script src="<?php echo base_url() ?>assets/plugins/date-picker/date-picker.js"></script>
+		<script src="<?php echo base_url() ?>assets/plugins/date-picker/jquery-ui.js"></script>
+		<script src="<?php echo base_url() ?>assets/plugins/input-mask/jquery.maskedinput.js"></script>
+
+		<!-- Form Advanced Element -->
+		<script src="<?php echo base_url() ?>assets/js/formelementadvnced.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/form-elements.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/file-upload.js"></script>
+
 
 
 		<!-- simplebar JS -->

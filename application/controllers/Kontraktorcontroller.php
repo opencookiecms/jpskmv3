@@ -8,6 +8,7 @@ class Kontraktorcontroller extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Kmodel');
+		$this->load->model('Mainmodel');
 	}
 	
     public function index()
@@ -38,10 +39,11 @@ class Kontraktorcontroller extends CI_Controller {
 
 	public function kadd()
 	{	
+		$data['jpsofficer']=$this->Mainmodel->getOrangPenting();
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
-		$this->load->view('pages/kontraktor_form.php');
+		$this->load->view('pages/kontraktor_form.php',$data);
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
 	}

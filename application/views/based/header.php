@@ -44,6 +44,9 @@
 		<!-- simplebar CSS -->
 		<link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/simplebar/css/simplebar.css">
 
+		<!-- Date Picker css -->
+		<link href="<?php echo base_url() ?>assets/plugins/date-picker/date-picker.css" rel="stylesheet" />
+
 		<!-- Data table css -->
 		<link href="<?php echo base_url() ?>assets/plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
 

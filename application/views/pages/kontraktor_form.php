@@ -56,24 +56,21 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Alamat</label>
-                                        <input class="form-control" placeholder="cth:N0 1821 Lorong Peruda 1"
-                                            type="text" name="konalamat">
+                                        <input class="form-control" placeholder="cth:N0 1821 Lorong Peruda 1" type="text" name="konalamat">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label"></label>
-                                        <input class="form-control" placeholder="cth:Taman Peruda" type="text"
-                                            name="konalamatt">
+                                        <input class="form-control" placeholder="cth:Taman Peruda" type="text"name="konalamatt">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label"></label>
-                                        <input class="form-control" placeholder="cth:Bakar Arang" type="text"
-                                            name="konalamatd">
+                                        <input class="form-control" placeholder="cth:Bakar Arang" type="text" name="konalamatd">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
@@ -86,15 +83,13 @@
                                 <div class="col-sm-2 col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Bandar</label>
-                                        <input class="form-control" placeholder="eg:Sungai Petani" type="text"
-                                            name="Bandar">
+                                        <input class="form-control" placeholder="eg:Sungai Petani" type="text"name="Bandar">
                                     </div>
                                 </div>
                                 <div class="col-sm-2 col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Daerah</label>
-                                        <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                            name="daerah">
+                                        <input class="form-control" placeholder="eg:Kuala Muda" type="text" name="daerah">
                                     </div>
                                 </div>
                                 <div class="col-sm-2 col-md-2">
@@ -123,8 +118,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Telefon Pejabat</label>
-                                        <input class="form-control" placeholder="04-XXXXXXX" type="text"
-                                            name="telefonpejabat">
+                                        <input class="form-control" placeholder="04-XXXXXXX" type="text" name="telpejabat">
                                     </div>
                                 </div>
 
@@ -132,8 +126,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Nama Pengurus</label>
-                                        <input class="form-control" placeholder="eg:Ahmad bin Hassan" type="text"
-                                            name="namapengurus">
+                                        <input class="form-control" placeholder="eg:Ahmad bin Hassan" type="text"name="namapengurus">
                                     </div>
                                 </div>
 
@@ -142,8 +135,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Kad Pengenalan</label>
-                                        <input class="form-control" placeholder="eg:72XXXX-00-XXXX" type="text"
-                                            name="nokadpengenalan">
+                                        <input class="form-control" placeholder="eg:72XXXX-00-XXXX" type="text" name="nokadpengenalan">
                                     </div>
                                 </div>
 
@@ -151,16 +143,14 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Telefon Pengurus</label>
-                                        <input class="form-control" placeholder="cth:010-1234567" type="text"
-                                            name="noktelefonpengurus">
+                                        <input class="form-control" placeholder="cth:010-1234567" type="text" name="noktelpengurus">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Email</label>
-                                        <input class="form-control" placeholder="cth:adk@gmail.com" type="text"
-                                            name="emailsyarikat">
+                                        <input class="form-control" placeholder="cth:adk@gmail.com" type="text" name="emailsyarikat">
                                     </div>
                                 </div>
 
@@ -171,12 +161,6 @@
                                             name="faxsyarikat">
                                     </div>
                                 </div>
-
-
-
-
-
-
                             </div>
                         </section>
                         <h3>Maklumat Rakan Kongsi</h3>
@@ -346,7 +330,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Permohonan Baru</label>
-                                        <select class="form-control custom-select select23" name="konoperasi">
+                                        <select class="form-control custom-select select23" name="pbaru">
                                             <option value=""></option>
                                             <option value="Ya">Ya</option>
                                             <option value="Tidak">Tidak</option>
@@ -359,7 +343,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Pembaharuan</label>
-                                        <select class="form-control custom-select select24" name="prestasi">
+                                        <select class="form-control custom-select select24" name="pembaharuan">
                                             <option value=""></option>
                                             <option value="Ya">Ya</option>
                                             <option value="Tidak">Tidak</option>
@@ -373,7 +357,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Lain-Lain</label>
-                                        <input type="text" name="rakantelempat" class="form-control"
+                                        <input type="text" name="lainlain" class="form-control"
                                             placeholder="cth:012-12334456">
                                     </div>
                                 </div>
@@ -382,7 +366,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <select class="form-control custom-select select25" name="prestasi">
+                                        <select class="form-control custom-select select25" name="kategori">
                                             <option value="Berdaftar">Kontraktor</option>
                                             <option value="Pembekal">Pembekal</option>
                                             <option value="Perkhidmatan">Perkhidmatan</option>
@@ -399,47 +383,46 @@
                         <section>
                             <div class="row">
 
-                                <div class="col-sm-3 col-md-3">
+                                <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Tarikh Permohonan</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input class="form-control fc-datepicker" name="tmohon" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
-                                <div class="col-sm-3 col-md-3">
+                                <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Cas Perkhidmatan (RM)</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input type="text" name="casp" class="form-control" placeholder="RM 10">
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">No Reset</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
+                                        <input type="text" name="noreset" class="form-control"
                                             placeholder="cth:JPS-2938HS">
                                     </div>
                                 </div>
-                                <div class="col-sm-2 col-md-2"></div>
+                              
 
-                                <div class="col-sm-3 col-md-3">
+                                <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Sijil Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="nosijilp" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Tarikh Sijil Dikeluarkan</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="tsijilkeluar" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
-                                <div class="col-sm-4 col-md-4">
+                                <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Tarikh Tamat Sijil</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input class="form-control fc-datepicker" name="tsijiltamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
-                                <div class="col-sm-2 col-md-2"></div>
+                               
 
                             </div>
                         </section>
@@ -450,40 +433,92 @@
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Disemak oleh</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <select class="form-control custom-select select26" name="semakoleh">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->NamaO.'">'.$row->NamaO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Disahkan Oleh</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <select class="form-control custom-select select26" name="saholeh">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->NamaO.'">'.$row->NamaO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Diluluskan Oleh</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select26" name="lulusoleh">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->NamaO.'">'.$row->NamaO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Jawatan Penyemak</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <select class="form-control custom-select select26" name="jsemak">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->JawatanO.'">'.$row->JawatanO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Jawatan Pengurus</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <select class="form-control custom-select select26" name="jurus">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->JawatanO.'">'.$row->JawatanO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Jawatan Penglulus</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select26" name="julus">
+                                        <option value=""></option>
+                                        <?php
+
+                                            foreach($jpsofficer as $row)
+                                            {
+                                              echo '<option value="'.$row->JawatanO.'">'.$row->JawatanO.'</option>';
+                                            } 
+                                        ?> 
+                                        </select>
                                     </div>
                                 </div>
 
@@ -504,92 +539,124 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="lnodaftar" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="tlpkksah" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input class="form-control fc-datepicker" name="tlpkktamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkgredsatu">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkcatsatu">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lpkkkhusussatu" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkcatdua">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkcatdua">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lpkkkhususdua" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkgredtiga">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lpkkcattiga">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lpkkkhusustiga" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
@@ -599,20 +666,19 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="lspkkdaftar" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="tlspkksah" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input class="form-control fc-datepicker" name="tlspkktamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 

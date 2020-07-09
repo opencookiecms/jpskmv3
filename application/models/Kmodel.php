@@ -53,7 +53,7 @@ class Kmodel extends CI_Model {
 
    ///Add kontraktor
 
-   public function kadd()
+   public function kaddProcess()
    {
 
    }

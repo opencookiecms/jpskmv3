@@ -25,6 +25,15 @@ $(document).ready(function() {
 		minimumResultsForSearch: Infinity,
 		width: 300
 	});
+	$('.select26').select2({
+		minimumResultsForSearch: Infinity,
+		width: 235
+	});
+
+	$('.select27').select2({
+		minimumResultsForSearch: Infinity,
+		width: 170
+	});
 
 	// Select2 by showing the search
 	$('.select2-show-search').select2({
