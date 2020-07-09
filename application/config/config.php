@@ -23,8 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/jpskmv3/';
+//$config['base_url'] = 'http://localhost/jpskmv3/';
 //$config['base_url'] = 'http://192.168.64.2/jpskmv3/';
+$config['base_url'] = 'http://www.jpskmsb.gov.my/jpskmv3/';
 
 /*
 |--------------------------------------------------------------------------
