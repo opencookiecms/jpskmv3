@@ -4,10 +4,7 @@
 					<div class="container">
 						<div class="d-flex">
 							<a class="header-brand text-left" href="index.html">
-								<img src="<?php echo base_url() ?>assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dashtic logo">
-								<img src="<?php echo base_url() ?>assets/images/brand/logo1.png" class="header-brand-img dark-logo" alt="Dashtic logo">
-								<img src="<?php echo base_url() ?>assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Dashtic logo">
-								<img src="<?php echo base_url() ?>assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dashtic logo">
+								JPSKM beta 1.0
 							</a>
 							<a id="horizontal-navtoggle" class="animated-arrow hor-toggle"><span></span></a><!-- sidebar-toggle-->
 							<div class="dropdown  header-option">
