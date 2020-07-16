@@ -26,24 +26,28 @@ class Kontraktorcontroller extends CI_Controller {
 
 	public function kdetail($id="")
 	{
-		$data['kdetail']=$this->Kmodel->getKontraktorId($id);
-
-
+		$context = array(
+			'kdetail'=> $this->Kmodel->getKontraktorId($id)
+		);
+		
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
-		$this->load->view('pages/kontraktor_detail.php',$data);
+		$this->load->view('pages/kontraktor_detail.php',$context);
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
 	}
 
 	public function kadd()
 	{	
-		$data['jpsofficer']=$this->Mainmodel->getOrangPenting();
+		$context = array(
+			'jpsofficer' => $this->Mainmodel->getOrangPenting(),
+		);
+
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
-		$this->load->view('pages/kontraktor_form.php',$data);
+		$this->load->view('pages/kontraktor_form.php',$context);
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
 	}

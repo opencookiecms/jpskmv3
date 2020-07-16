@@ -41,7 +41,7 @@
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Nama Syarikat</label>
-                                        <input type="text" name="namasyarikat" class="form-control"
+                                        <input type="text" name="konnama" class="form-control"
                                             placeholder="Nama Syarikat">
                                     </div>
                                 </div>
@@ -56,21 +56,21 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Alamat</label>
-                                        <input class="form-control" placeholder="cth:N0 1821 Lorong Peruda 1" type="text" name="konalamat">
+                                        <input class="form-control" placeholder="cth:N0 1821 Lorong Peruda 1" type="text" name="alamat">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label"></label>
-                                        <input class="form-control" placeholder="cth:Taman Peruda" type="text"name="konalamatt">
+                                        <input class="form-control" placeholder="cth:Taman Peruda" type="text"name="alamatjalan">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label"></label>
-                                        <input class="form-control" placeholder="cth:Bakar Arang" type="text" name="konalamatd">
+                                        <input class="form-control" placeholder="cth:Bakar Arang" type="text" name="alamatdearah">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
@@ -83,7 +83,7 @@
                                 <div class="col-sm-2 col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Bandar</label>
-                                        <input class="form-control" placeholder="eg:Sungai Petani" type="text"name="Bandar">
+                                        <input class="form-control" placeholder="eg:Sungai Petani" type="text"name="bandar">
                                     </div>
                                 </div>
                                 <div class="col-sm-2 col-md-2">

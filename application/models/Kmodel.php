@@ -7,6 +7,7 @@ class Kmodel extends CI_Model {
    public function __construct()
    {
        parent::__construct();
+       $this->load->helper('url');
        //Do your magic here
    }
 
@@ -55,15 +56,27 @@ class Kmodel extends CI_Model {
 
    public function kaddProcess()
    {
+      $context = array(
+          'konName' => $this->input->post('konnama'),
+          'KonAlamat' => $this->input->post('alamat'),
+          'konAlamatExtS' => $this->input->post('alamatjalan'),
+          'konAlamatExtD' => $this->input->post('alamatdaerah'),
+          'konPoskod'=> $this->input->post('poskod'),
+          'konBandar' => $this->input->post('bandar'),
+          'konDaerah' => $this->input->post('dearah'),
+          'konNegeri' => $this->input->post('negeri'),
+          'konTel' => $this->input->post('telefon')
+      );
 
+      return $this->db->insert('kontraktor', $context);
    }
-
-   public function kupdate()
+        
+   public function kupdateProcess()
    {
 
    }
 
-   public function kdelete()
+   public function kdeleteProcess()
    {
         
    }
