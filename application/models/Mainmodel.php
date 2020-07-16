@@ -20,6 +20,26 @@ class Mainmodel extends CI_Model {
 
         return $query->result();
     }
+
+    public function get_verify($emaiv,$passv)
+    {
+        $this->db->select('*');
+        $this->db->from('jps_users');
+        $this->db->where('jps_email', $emaiv);
+        $this->db->where('jps_password', $passv);
+        $this->db->limit(1);
+    
+        $get_data = $this->db->get();
+    
+        if($get_data->num_rows()==1)
+        {
+          return $get_data->result();
+        }
+        else
+        {
+          return false;
+        }
+    }
     
 
     

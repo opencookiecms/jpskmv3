@@ -7,6 +7,7 @@ class Maincontroller extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('Mainmodel');
         //Do your magic here
     }
     
@@ -14,6 +15,36 @@ class Maincontroller extends CI_Controller {
     public function index()
     {
         
+    }
+
+    public function login()
+    {
+
+    }
+
+    public function verify()
+    {
+        $emaiv = $this->input->post('email');
+        $passv = md5($this->input->post('pass'));
+
+        $veri = $this->Mainmodel->get_verify($emaiv,$passv);
+        if($veri)
+        {
+            foreach ($veri as $row)
+            {
+                $this->session->set_userdata('userid',$row->user_id);
+                $this->session->set_userdata('email',$row->jps_email);
+                $this->session->set_userdata('name', $row->jps_name);
+                $this->session->set_userdata('userpic',$row->user_pic);
+                $this->session->set_userdata('roles',$row->jps_userroles);
+                $this->session->set_userdata('jawatan',$row->jps_position);
+        
+                redirect('');
+            }
+
+        }else{
+            redirect('login');
+        }
     }
 
  
