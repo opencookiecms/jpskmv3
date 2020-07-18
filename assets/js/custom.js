@@ -510,6 +510,20 @@
 			localStorage.setItem("color-horizontal", "false");
 		}
 	});
+
+	
+	$(function(){
+		var $pkk = $('#txtpkk');
+		var $spkk = $('#txtspkk');
+		var $stb = $('#stbsah');
+		function onChange() {
+			$spkk.val($pkk.val());
+			$stb.val($pkk.val());
+		};
+		$('#txtpkk')
+			.change(onChange)
+			.keyup(onChange);
+	});
 	
 	
 })(jQuery);

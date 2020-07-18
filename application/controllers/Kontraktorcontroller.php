@@ -44,12 +44,26 @@ class Kontraktorcontroller extends CI_Controller {
 			'jpsofficer' => $this->Mainmodel->getOrangPenting(),
 		);
 
-		$this->load->view('based/header.php');
-		$this->load->view('based/appheader.php');
-		$this->load->view('based/nav.php');
-		$this->load->view('pages/kontraktor_form.php',$context);
-		$this->load->view('based/footer.php');
-		$this->load->view('based/end.php');
+		$this->form_validation->set_rules('konnama','Kontraktor','required');
+
+	    if($this->form_validation->run() === FALSE){
+			
+			$this->load->view('based/header.php');
+			$this->load->view('based/appheader.php');
+			$this->load->view('based/nav.php');
+			$this->load->view('pages/kontraktor_form.php',$context);
+			$this->load->view('based/footer.php');
+			$this->load->view('based/end.php');
+
+		}else{
+
+			$this->Kmodel->kaddProcess();
+			//redirect(base_url()."mrk/successmsg"./$lass); //redirect last id to another step
+			redirect(base_url('kontraktor')); //redirect last id to another step
+
+		}
+
+	
 	}
 
 	public function kupdate()

@@ -7,7 +7,17 @@ $(function() {
 		enableAllSteps: true,
 		//enablePagination: false,
 		stepsOrientation: "vertical",
-		titleTemplate: '<span class="number">#index#<\/span> <span class="title">#title#<\/span>'
+		titleTemplate: '<span class="number">#index#<\/span> <span class="title">#title#<\/span>',
+		onStepChanged: function (event, currentIndex, priorIndex){
+		if (currentIndex === 11) { //if last step
+			//remove default #finish button
+			$('#wizard1').find('a[href="#finish"]').remove(); 
+			//append a submit type button
+			$('#wizard1 .actions li:last-child').append('<button type="submit" name="submit" id="click" class="btn btn-success">Save</button>');
+			
+		 }
+	    }
+		
 	});
 	$('#wizard2').steps({
 		headerTag: 'h3',

@@ -33,6 +33,7 @@
                         </div>
                     </div>
 
+                   <?php  echo form_open('kontraktor-baru', 'id="form"'); ?>
                     <div id="wizard1" class="p-4">
                         <h3>Maklumat Syarikat</h3>
                         <section>
@@ -95,7 +96,7 @@
                                 <div class="col-sm-2 col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Negeri</label>
-                                        <select class="form-control custom-select select2" name="konnegeri">
+                                        <select class="form-control custom-select select2" name="negeri">
                                             <option value="Perlis">Perlis</option>
                                             <option value="Kedah">Kedah</option>
                                             <option value="Kelantan">Kelantan</option>
@@ -135,7 +136,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Kad Pengenalan</label>
-                                        <input class="form-control" placeholder="eg:72XXXX-00-XXXX" type="text" name="nokadpengenalan">
+                                        <input class="form-control" placeholder="eg:72XXXX-00-XXXX" type="text" name="nokp">
                                     </div>
                                 </div>
 
@@ -143,14 +144,14 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Telefon Pengurus</label>
-                                        <input class="form-control" placeholder="cth:010-1234567" type="text" name="noktelpengurus">
+                                        <input class="form-control" placeholder="cth:010-1234567" type="text" name="telpengurus">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Email</label>
-                                        <input class="form-control" placeholder="cth:adk@gmail.com" type="text" name="emailsyarikat">
+                                        <input class="form-control" placeholder="cth:adk@gmail.com" type="text" name="email">
                                     </div>
                                 </div>
 
@@ -158,7 +159,7 @@
                                     <div class="form-group">
                                         <label class="form-label">No Fax</label>
                                         <input class="form-control" placeholder="cth:010-1234567" type="text"
-                                            name="faxsyarikat">
+                                            name="fax">
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +292,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Kawasan Operasi</label>
-                                        <select class="form-control custom-select select21" name="konoperasi">
+                                        <select class="form-control custom-select select21" name="kawoperasi">
                                             <option value="Sik">Sik</option>
                                             <option value="Baling">Baling</option>
                                             <option value="Yan">Yan</option>
@@ -357,7 +358,7 @@
                                 <div class="col-sm-5 col-md-5">
                                     <div class="form-group">
                                         <label class="form-label">Lain-Lain</label>
-                                        <input type="text" name="lainlain" class="form-control"
+                                        <input type="text" name="etc" class="form-control"
                                             placeholder="cth:012-12334456">
                                     </div>
                                 </div>
@@ -539,7 +540,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="lnodaftar" class="form-control">
+                                        <input type="text" id="txtpkk" name="lnodaftar" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
@@ -593,7 +594,7 @@
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <select class="form-control custom-select select27" name="lpkkcatdua">
+                                        <select class="form-control custom-select select27" name="lpkkgreddua">
                                             <option value="none">Tiada</option>
                                             <option value="G1">G1</option>
                                             <option value="G2">G2</option>
@@ -666,7 +667,7 @@
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="lspkkdaftar" class="form-control">
+                                        <input type="text" id="txtspkk" name="lspkkdaftar" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-3 col-md-3">
@@ -685,72 +686,105 @@
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkgredsatu">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkcatsatu">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lspkkkhusussatu" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkgreddua">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkcatdua">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lspkkkhususdua" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Gred</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkgredtiga">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-3 col-md-3">
                                     <div class="form-group">
                                         <label class="form-label">Kategori</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <select class="form-control custom-select select27" name="lspkkcattiga">
+                                            <option value="none">Tiada</option>
+                                            <option value="B">B</option>
+                                            <option value="CE">CE</option>
+                                            <option value="ME">ME</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Pengkhususan</label>
-                                        <input type="text" name="rakantelsatu" class="form-control"
-                                            placeholder="cth:JPS-2938HS">
+                                        <input type="text" name="lspkkkhusustiga" class="form-control" placeholder="cth:G1, G5, B, CE">
                                     </div>
                                 </div>
 
@@ -772,21 +806,21 @@
                                 <div class="col-sm-8 col-md-8">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="stbnosijil" id="stbsah" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4"></div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="stbsah" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="stbtamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
@@ -794,7 +828,16 @@
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Gred Pendaftaran</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                         <select class="form-control custom-select select27" name="stbgred">
+                                            <option value="none">Tiada</option>
+                                            <option value="G1">G1</option>
+                                            <option value="G2">G2</option>
+                                            <option value="G3">G3</option>
+                                            <option value="G4">G4</option>
+                                            <option value="G5">G5</option>
+                                            <option value="G6">G6</option>
+                                            <option value="G7">G7</option>
+                                        </select>
                                     </div>
                                 </div>
 
@@ -814,21 +857,23 @@
                                 <div class="col-sm-8 col-md-8">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="sijilssm" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4"></div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                     
+										<input class="form-control fc-datepicker" name="ssmsah" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                      
+										<input class="form-control fc-datepicker" name="ssmtamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
@@ -836,33 +881,36 @@
                         </section>
 
                         <!--GST-->
-                        <h3>GST</h3>
+                        <h3>SST</h3>
 
                         <section>
 
                             <div class="row">
                                 <div class="col-sm-12 col-md-12">
 
-                                    <h6 class="mb-6">Cukai Barang dan Perkhidmatan (GST)</h6>
+                                    <h6 class="mb-6">SST</h6>
                                 </div>
                                 <div class="col-sm-8 col-md-8">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="sijilsst" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4"></div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                      
+										<input class="form-control fc-datepicker" name="sstsah" placeholder="MM/DD/YYYY" type="text">
+										
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                               
+										<input class="form-control fc-datepicker" name="ssttamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
@@ -884,21 +932,21 @@
                                 <div class="col-sm-8 col-md-8">
                                     <div class="form-group">
                                         <label class="form-label">No Pendaftaran</label>
-                                        <input type="text" name="rakansatu" class="form-control">
+                                        <input type="text" name="jpsno" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4"></div>
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Tempoh Sah Dari</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                       <input class="form-control fc-datepicker" name="jpssah" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Hingga</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <input class="form-control fc-datepicker" name="jpstamat" placeholder="MM/DD/YYYY" type="text">
                                     </div>
                                 </div>
 
@@ -906,14 +954,17 @@
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Gred Pendaftaran</label>
-                                        <input type="text" name="rakankadsatu" class="form-control" placeholder="RM 10">
+                                        <select class="form-control custom-select select27" name="jpsgred">
+                                            <option value="none">Tiada</option>
+                                            <option value="Kontraktor">Kontraktor</option>
+											<option value="Pembekal">Pembekal</option>
+                                        </select>
                                     </div>
                                 </div>
 
                             </div>
                         </section>
-
-
+                      </form>                       
                     </div>
 
                 </div>

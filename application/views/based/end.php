@@ -97,12 +97,19 @@
 		<script src="<?php echo base_url() ?>assets/plugins/chart/chart.bundle.js"></script>
 		<script src="<?php echo base_url() ?>assets/plugins/chart/utils.js"></script>
 
-				<!--Select2 js -->
-				<script src="<?php echo base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
+		<!--Select2 js -->
+		<script src="<?php echo base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
 		<script src="<?php echo base_url() ?>assets/js/select2.js"></script>
+
+			<!-- Sweet alert js -->
+		<script src="<?php echo base_url() ?>assets/plugins/sweet-alert/jquery.sweet-modal.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/plugins/sweet-alert/sweetalert.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/sweet-alert.js"></script>
 
 		<!-- Custom js-->
 		<script src="<?php echo base_url() ?>assets/js/custom.js"></script>
+
+		
 
 	</body>
 </html>
