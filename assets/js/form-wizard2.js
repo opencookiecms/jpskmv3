@@ -19,6 +19,17 @@ $(function() {
 	    }
 		
 	});
+	$('#wizard12').steps({
+		headerTag: 'h3',
+		bodyTag: 'section',
+		autoFocus: true,
+		enableAllSteps: true,
+		//enablePagination: false,
+		stepsOrientation: "vertical",
+		titleTemplate: '<span class="number">#index#<\/span> <span class="title">#title#<\/span>',
+	
+		
+	});
 	$('#wizard2').steps({
 		headerTag: 'h3',
 		bodyTag: 'section',

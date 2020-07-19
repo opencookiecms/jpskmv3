@@ -21,8 +21,6 @@
             </div>
         </div>
         <!--End Page header-->
-
-
         <!-- Row -->
         <div class="row ">
             <div class="col-md-12">
@@ -42,7 +40,7 @@
                                 <div class="col-sm-4 col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Nama Syarikat</label>
-                                        <input type="text" name="konnama" class="form-control"
+                                        <input type="text" name="konnama" value="" class="form-control"
                                             placeholder="Nama Syarikat">
                                     </div>
                                 </div>

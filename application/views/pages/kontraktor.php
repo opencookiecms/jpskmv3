@@ -108,7 +108,7 @@
                                                			 <?php } ?>
 														</td>
 														<td>
-														<a href="" class="btn btn-primary" role="button"><i class="fa fa-edit" aria-hidden="true"></i></a> <a href="<?php echo site_url('kontraktor/cetak/'.$row->kontraktorId)?>" class="btn btn-info" role="button"><i class="fa fa-print" aria-hidden="true"></i></a>  <a href="" class="btn btn-danger" role="button"><i class="fa fa-times" aria-hidden="true"></i></a>  
+														<a href="<?php echo site_url('kontraktor-update/'.$row->kontraktorId)?>" class="btn btn-primary" role="button"><i class="fa fa-edit" aria-hidden="true"></i></a> <a href="<?php echo site_url('kontraktor/cetak/'.$row->kontraktorId)?>" class="btn btn-info" role="button"><i class="fa fa-print" aria-hidden="true"></i></a>  <a href="" class="btn btn-danger" role="button"><i class="fa fa-times" aria-hidden="true"></i></a>  
 														</td>
 													</tr>
 												<?php endforeach; ?>

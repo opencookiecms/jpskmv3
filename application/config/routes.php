@@ -56,6 +56,7 @@ $route['jps-administrator']="admincontroller/adminpanel";
 $route['kontraktor'] = "Kontraktorcontroller";
 $route['kontraktor/cetak/(:num)'] = "Kontraktorcontroller/cetakkontrakotor/$1";
 $route['kontraktor-detail/(:num)'] = "Kontraktorcontroller/kdetail/$1";
+$route['kontraktor-update/(:num)'] = "Kontraktorcontroller/kupdate/$1";
 $route['maklumat-kontraktor/(:num)'] = "Kontraktorcontroller/kform/$1";
 $route['kontraktor-baru'] = "Kontraktorcontroller/kadd";
 $route['404_override'] = '';

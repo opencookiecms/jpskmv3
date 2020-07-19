@@ -54,7 +54,7 @@ class Kontraktorcontroller extends CI_Controller {
 			$this->load->view('based/header.php');
 			$this->load->view('based/appheader.php');
 			$this->load->view('based/nav.php');
-			$this->load->view('pages/kontraktor_form.php',$context);
+			$this->load->view('pages/kontraktor_form_insert.php',$context);
 			$this->load->view('based/footer.php');
 			$this->load->view('based/end.php');
 
@@ -62,6 +62,7 @@ class Kontraktorcontroller extends CI_Controller {
 
 			$this->Kmodel->kaddProcess();
 			//redirect(base_url()."mrk/successmsg"./$lass); //redirect last id to another step
+			$this->session->set_flashdata('success','Action Completed');
 			redirect(base_url('kontraktor')); //redirect last id to another step
 
 		}
@@ -69,9 +70,29 @@ class Kontraktorcontroller extends CI_Controller {
 	
 	}
 
-	public function kupdate()
+	public function kupdate($id='')
 	{
+		$context = array(
+			'kdetail'=> $this->Kmodel->getKontraktorId($id),
+		);
 
+		$this->form_validation->set_rules('konnama','Kontraktor','required');
+		$id = $this->input->post('hiddenid');
+		if($this->form_validation->run() == FALSE){
+
+			$this->load->view('based/header.php');
+			$this->load->view('based/appheader.php');
+			$this->load->view('based/nav.php');
+			$this->load->view('pages/kontraktor_form_update.php',$context);
+			$this->load->view('based/footer.php');
+			$this->load->view('based/end.php');
+
+		}else{
+			$this->Kmodel->kupdateProcess($data ,$id);
+			redirect(base_url('kontraktor-update/'.$id)); //redirect last id to another step
+		}
+
+		
 	}
 
 	public function cetakkontrakotor($id="")
