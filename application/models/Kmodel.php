@@ -20,6 +20,15 @@ class Kmodel extends CI_Model {
         return $query->result();
    }
 
+   public function getSijilSah()
+   {
+      $this->db->select('*');
+      $this->db->from('sijilsah');
+      $query = $this->db->get();
+
+      return $query->result();
+   }
+
    public function getKontraktorId($id)
    {
 

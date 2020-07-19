@@ -7,8 +7,11 @@ class Kontraktorcontroller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->helper('url');
 		$this->load->model('Kmodel');
 		$this->load->model('Mainmodel');
+
+		$this->load->library('Html2Pdf');
 	}
 	
     public function index()
@@ -69,6 +72,16 @@ class Kontraktorcontroller extends CI_Controller {
 	public function kupdate()
 	{
 
+	}
+
+	public function cetakkontrakotor($id="")
+	{
+		$context = array(
+			'kdetail'=> $this->Kmodel->getKontraktorId($id),
+			'sijilsah' => $this->Kmodel->getSijilSah(),
+		);
+
+		$this->load->view('print/kontraktor-cetak.php',$context);
 	}
 
 
