@@ -345,6 +345,15 @@ class Kmodel extends CI_Model {
 
    }
 
+   public function searchKontraktor()
+   {
+      $this->db->select('*');
+      $this->db->from('kontraktor');
+      $query = $this->db->get();
+
+      return $query->result();
+   }
+
    public function kdeleteProcess()
    {
         

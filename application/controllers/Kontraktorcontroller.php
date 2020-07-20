@@ -135,6 +135,20 @@ class Kontraktorcontroller extends CI_Controller {
 		
 	}
 
+	public function mkontraktor()
+	{
+		$context = array(
+			'getfilter' => $this->Kmodel->searchKontraktor()
+		);
+
+		$this->load->view('based/header.php');
+		$this->load->view('based/appheader.php');
+		$this->load->view('based/nav.php');
+		$this->load->view('pages/maklumat_kontraktor.php',$context);
+		$this->load->view('based/footer.php');
+		$this->load->view('based/end.php');
+	}
+
 	public function cetakkontrakotor($id="")
 	{
 		$context = array(

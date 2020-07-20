@@ -58,6 +58,7 @@ $route['kontraktor/cetak/(:num)'] = "Kontraktorcontroller/cetakkontrakotor/$1";
 $route['kontraktor-detail/(:num)'] = "Kontraktorcontroller/kdetail/$1";
 $route['kontraktor-update/(:num)'] = "Kontraktorcontroller/kupdate/$1";
 $route['maklumat-kontraktor/(:num)'] = "Kontraktorcontroller/kform/$1";
+$route['maklumat-kontraktor/daerah'] = "Kontraktorcontroller/mkontraktor";
 $route['kontraktor-baru'] = "Kontraktorcontroller/kadd";
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -420,8 +420,8 @@
 											</tr>
 											<tr>
 											<th>Status Pendaftaran<br></th>
-											<td class="tg-yw4l"><?php echo $kdetail[0]->spStatusPendaftaran ?></td>
-											<td class="tg-yw4l" colspan="8"><?php echo $kdetail[0]->spNoSiri ?></td>
+											<td class="tg-yw4l">--</td>
+											<td class="tg-yw4l" colspan="8">--</td>
 											</tr>
 											<tr>
 											<th>Permohonan Baru<br></td>

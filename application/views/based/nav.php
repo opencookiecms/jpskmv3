@@ -18,7 +18,7 @@
 									</a>
 									<ul class="sub-menu">
 										<li><a href="<?php echo site_url('kontraktor') ?>">Senarai Kontraktor</a></li>
-										<li><a href="advanced-forms.html">Maklumat Syarikat</a></li>
+										<li><a href="<?php echo site_url('maklumat-kontraktor/daerah')?>">Maklumat Syarikat</a></li>
 									</ul>
 								</li>
 								<li aria-haspopup="true">
