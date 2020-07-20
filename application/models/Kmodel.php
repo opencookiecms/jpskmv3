@@ -202,11 +202,12 @@ class Kmodel extends CI_Model {
       return $this->db->insert('kontraktor', $context);
    }
         
-   public function kupdateProcess($context, $id)
+   public function kupdateProcess($data="", $context, $id)
    {
       $context = array(
          'konName' => $this->input->post('konnama'),
          'KonAlamat' => $this->input->post('alamat'),
+         'konImage' => $data,
          'konAlamatExtS' => $this->input->post('alamatjalan'),
          'konAlamatExtD' => $this->input->post('alamatdaerah'),
          'konPoskod'=> $this->input->post('poskod'),

@@ -33,7 +33,7 @@
                         </div>
                     </div>
 
-                   <?php  echo form_open('kontraktor-update/'.$kdetail[0]->kontraktorId ); ?>
+                   <?php  echo form_open_multipart('kontraktor-update/'.$kdetail[0]->kontraktorId ); ?>
                     <div id="wizard12" class="p-4">
                         <h3>Maklumat Syarikat</h3>
                         <section>
@@ -44,6 +44,7 @@
                                         <label class="form-label">Nama Syarikat</label>
                                         <input type="text" name="konnama" value="<?php echo $kdetail[0]->konName ?>" class="form-control" placeholder="Nama Syarikat">
                                         <input type="hidden" name="hiddenid" value="<?php echo $kdetail[0]->kontraktorId ?>">
+                                        <input type="hidden" name="hiddenpic" value=" <?php echo $kdetail[0]->konImage ?>">
                                     </div>
                                 </div>
                                 <div class="col-sm-8 col-md-8"></div>
@@ -51,6 +52,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Gambar</label>
                                         <input class="form-control" name="file" type="file" accept="image/*">
+                                        <?php echo $kdetail[0]->konImage ?>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-6"></div>
