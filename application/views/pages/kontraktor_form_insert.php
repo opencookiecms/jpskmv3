@@ -31,7 +31,7 @@
                         </div>
                     </div>
 
-                   <?php  echo form_open('kontraktor-baru', 'id="form"'); ?>
+                   <?php  echo form_open_multipart('kontraktor-baru', 'id="form"'); ?>
                     <div id="wizard1" class="p-4">
                         <h3>Maklumat Syarikat</h3>
                         <section>

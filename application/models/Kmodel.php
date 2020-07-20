@@ -63,11 +63,13 @@ class Kmodel extends CI_Model {
 
    ///Add kontraktor
 
-   public function kaddProcess()
+   public function kaddProcess($data="")
    {
       $context = array(
+         
           'konName' => $this->input->post('konnama'),
           'KonAlamat' => $this->input->post('alamat'),
+          'konImage' => $data,
           'konAlamatExtS' => $this->input->post('alamatjalan'),
           'konAlamatExtD' => $this->input->post('alamatdaerah'),
           'konPoskod'=> $this->input->post('poskod'),
