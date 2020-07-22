@@ -4,7 +4,7 @@
         <!--Page header-->
         <div class="page-header">
             <div class="page-leftheader">
-                <h4 class="page-title">Pendaftaran Kontraktor Baru</h4>
+                <h4 class="page-title">Kemaskini Kontraktor : <?php echo $kdetail[0]->konName ?>  </h4>
             </div>
             <div class="page-rightheader ml-auto d-lg-flex d-none">
                 <ol class="breadcrumb">
