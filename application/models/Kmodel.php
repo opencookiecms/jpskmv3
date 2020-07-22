@@ -345,10 +345,23 @@ class Kmodel extends CI_Model {
 
    }
 
-   public function searchKontraktor()
+   public function searchKontraktor($daerah)
    {
       $this->db->select('*');
       $this->db->from('kontraktor');
+      $this->db->where('konDaerah',$daerah);
+      $this->db->order_by('kontraktorId', 'ASC');
+      $query = $this->db->get();
+
+      return $query->result();
+   }
+
+   public function searchKontraktorprint($daerah)
+   {
+      $this->db->select('*');
+      $this->db->from('kontraktor');
+      $this->db->where('konDaerah',$daerah);
+      $this->db->order_by('kontraktorId', 'ASC');
       $query = $this->db->get();
 
       return $query->result();

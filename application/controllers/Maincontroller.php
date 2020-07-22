@@ -19,7 +19,7 @@ class Maincontroller extends CI_Controller {
 
     public function login()
     {
-
+        $this->load->view('pages/login.php');
     }
 
     public function verify()

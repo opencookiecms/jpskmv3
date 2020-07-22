@@ -29,6 +29,7 @@
 											</div>
 										</div>
 									</div>
+									<!--
 									<div class="col-xl-3 col-lg-3 col-md-12">
 										<div class="card">
 											<div class="card-body">
@@ -52,7 +53,7 @@
 												
 											</div>
 										</div>
-									</div>
+									</div>-->
 							
 							
 								</div>

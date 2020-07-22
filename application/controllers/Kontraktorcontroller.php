@@ -137,14 +137,22 @@ class Kontraktorcontroller extends CI_Controller {
 
 	public function mkontraktor()
 	{
-		$context = array(
-			'getfilter' => $this->Kmodel->searchKontraktor()
-		);
+		$d = $this->input->post('daerah');
+		if(empty($_POST)){
+			$data['getdaerah'] = $d;
+			$data['getfilter'] = $this->Kmodel->searchKontraktor('Tiada');
+		}else{
+			$data['getdaerah'] = $d;
+			$data['getfilter'] = $this->Kmodel->searchKontraktor($d);
+		}
+
+	
+	
 
 		$this->load->view('based/header.php');
 		$this->load->view('based/appheader.php');
 		$this->load->view('based/nav.php');
-		$this->load->view('pages/maklumat_kontraktor.php',$context);
+		$this->load->view('pages/maklumat_kontraktor.php',$data);
 		$this->load->view('based/footer.php');
 		$this->load->view('based/end.php');
 	}
@@ -157,6 +165,16 @@ class Kontraktorcontroller extends CI_Controller {
 		);
 
 		$this->load->view('print/kontraktor-cetak.php',$context);
+	}
+
+	public function cetakkontraktordaerah($daerah)
+	{
+		$context = array(
+			'kdetail'=> $this->Kmodel->searchKontraktorprint($daerah),
+			'sijilsah' => $this->Kmodel->getSijilSah(),
+		);
+
+		$this->load->view('print/kontraktor-daerah.php',$context);
 	}
 
 
