@@ -54,6 +54,9 @@ $route['jps-administrator']="admincontroller/adminpanel";
 
 //kontraktor
 $route['kontraktor'] = "Kontraktorcontroller";
+$route['aduan'] = "Aduancontroller";
+$route['aduan/b-aduan-satu'] = "Aduancontroller/addAduan1";
+$route['aduan/b-aduan-dua'] = "Aduancontroller/addAduan2";
 $route['login'] = 'Maincontroller/login';
 $route['kontraktor/cetak/(:num)'] = "Kontraktorcontroller/cetakkontrakotor/$1";
 $route['kontraktor-detail/(:num)'] = "Kontraktorcontroller/kdetail/$1";

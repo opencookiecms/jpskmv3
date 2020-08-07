@@ -27,7 +27,7 @@
 										Aduan <i class="fa fa-angle-down horizontal-icon"></i>
 									</a>
 									<ul class="sub-menu">
-										<li><a href="form-elements.html">Akan datang</a></li>
+										<li><a href="<?php echo site_url('aduan') ?>">Senarai Aduan</a></li>
 									
 									</ul>
 								</li>
