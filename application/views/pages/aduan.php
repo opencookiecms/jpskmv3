@@ -80,7 +80,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table id="example1" class="table table-striped table-bordered text-nowrap"
+                            <table id="example1" class="table table-striped table-bordered wrap"
                                 style="width:100%">
                                 <thead>
                                     <tr class="bold">
@@ -100,13 +100,13 @@
 
                                     <tr>
                                         <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
-                                        <td><?php echo $bil ?></td>
+                                        <td><?php echo $row->pengadu ?></td>
+                                        <td><?php echo $row->daerah ?></td>
+                                        <td><?php echo $row->notel ?></td>
+                                        <td><?php echo $row->aduantxt ?></td>
+                                        <td><?php echo $row->tarikhaduan ?></td>
+                                        <td><?php echo "status" ?></td>
+                                        <td>x + view</td>
 
                                        
                                     </tr>

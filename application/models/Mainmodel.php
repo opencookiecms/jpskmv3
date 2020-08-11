@@ -21,6 +21,15 @@ class Mainmodel extends CI_Model {
         return $query->result();
     }
 
+    public function getUser()
+    {
+      $this->db->select('*');
+      $this->db->from('jps_users');
+      $query = $this->db->get();
+
+      return $query->result();
+    }
+
     public function get_verify($emaiv,$passv)
     {
         $this->db->select('*');
@@ -39,6 +48,18 @@ class Mainmodel extends CI_Model {
         {
           return false;
         }
+    }
+
+    public function isEmail($mail)
+    {
+      $this->db->where('user_id',$mail);
+      $query = $this->db->get('jps_users');
+      $output = 'auto generate';
+      foreach($query->result() as $row)
+      {
+        $output .= '<option value="'.$row->jps_email.'">'.$row->jps_email.'</option>';
+      }
+      return $output;
     }
     
 

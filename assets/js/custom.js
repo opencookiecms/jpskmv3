@@ -524,6 +524,30 @@
 			.change(onChange)
 			.keyup(onChange);
 	});
+
+
+	//email auto grab from user
+	$(document).ready(function(){
+		$('#pegawaiemail').change(function(){
+			var user_id = $('#pegawaiemail').val()
+			if(user_id != ''){
+				$.ajax({
+					url:"/jpskmv3/Maincontroller/emailget",
+					method:"POST",
+					data:{user_id:user_id},
+					success:function(data){
+						$('#pemail').html(data);
+						console.log(data);
+					}
+				});
+			}
+		});
+	});
+
+
+
+
+
 	
 	
 })(jQuery);

@@ -47,6 +47,17 @@ class Maincontroller extends CI_Controller {
         }
     }
 
+    public function emailget()
+    {
+        $getemail = $this->input->post('user_id');
+      
+        if($getemail)
+        {
+            $isemail = $this->Mainmodel->isEmail($getemail);
+            echo $isemail;
+        }
+    }
+
  
 
 }
