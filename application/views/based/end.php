@@ -106,6 +106,11 @@
 		<script src="<?php echo base_url() ?>assets/plugins/sweet-alert/sweetalert.min.js"></script>
 		<script src="<?php echo base_url() ?>assets/js/sweet-alert.js"></script>
 
+		
+		<!-- Accordion js-->
+		<script src="<?php echo base_url() ?>assets/plugins/accordion/accordion.min.js"></script>
+		<script src="<?php echo base_url() ?>assets/js/accordion.js"></script>
+
 		<!-- Custom js-->
 		<script src="<?php echo base_url() ?>assets/js/custom.js"></script>
 

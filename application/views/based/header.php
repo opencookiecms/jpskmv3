@@ -62,6 +62,9 @@
 	    <link href="<?php echo base_url() ?>assets/plugins/sweet-alert/jquery.sweet-modal.min.css" rel="stylesheet" />
 		<link href="<?php echo base_url() ?>assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
 
+		<!-- Accordion Css -->
+		<link href="<?php echo base_url() ?>assets/plugins/accordion/accordion.css" rel="stylesheet" />
+
 	</head>
 
 	

@@ -26,7 +26,6 @@
         <div class="row">
             <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                 <!--aduan bahagia 1 -->
-                <?php if($formv == "v1") { ?>
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Borang Aduan</h4>
@@ -239,114 +238,7 @@
                            
                         </div>
                     </div>
-                </div>
-                <?php } ?>
-                <!--aduan bahagia 2 -->
-                <?php if($formv == "v2") { ?>
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Gerenal Elements this is v2</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12">
-                                <form class="form-horizontal">
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Text</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" value="Typing.....">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label" for="example-email">Email</label>
-                                        <div class="col-md-9">
-                                            <input type="email" id="example-email" name="example-email"
-                                                class="form-control" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Password</label>
-                                        <div class="col-md-9">
-                                            <input type="password" class="form-control" value="password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Placeholder</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" placeholder="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Readonly</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" readonly="" value="Readonly value">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Disabled</label>
-                                        <div class="col-md-9">
-                                            <input type="text" class="form-control" disabled="" value="Disabled value">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row mb-0">
-                                        <label class="col-md-3 form-label">Number</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="number" name="number">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <form class="form-horizontal">
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Name</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="text" name="name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Text area</label>
-                                        <div class="col-md-9">
-                                            <textarea class="form-control" rows="3">Hiiiii.....</textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">URL</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="url" name="url">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Search</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="search" name="search">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-3 form-label">Tel</label>
-                                        <div class="col-md-9">
-                                            <input class="form-control" type="tel" name="tel">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row mb-0">
-                                        <label class="col-md-3 form-label">Input Select</label>
-                                        <div class="col-md-9">
-                                            <select class="form-control select2">
-                                                <option>Apple</option>
-                                                <option>Orange</option>
-                                                <option>Mango</option>
-                                                <option>Grapes</option>
-                                                <option>Banana</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php } ?>
-
+                </div>  
             </div>
         </div>
     </div>

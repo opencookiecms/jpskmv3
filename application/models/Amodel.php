@@ -17,6 +17,30 @@ class Amodel extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('aduan1');
+        $this->db->join('aduan2','bid = aid','left');
+        $query = $this->db->get();
+  
+        return $query->result();
+    }
+
+    public function getAduanId($id)
+    {
+        $this->db->select('*');
+        $this->db->from('aduan1');
+        $this->db->join('aduan2','bid = aid','left');
+        $this->db->where('aid',$id);
+        $query = $this->db->get();
+  
+        return $query->result();
+    }
+
+    public function getAduanSiasat($idm, $ses)
+    {
+        $this->db->select('*');
+        $this->db->from('aduan1');
+        $this->db->join('aduan2','aduan2.bid = aduan1.aid','left');
+        $this->db->where('aduan1.aid',$idm);
+        $this->db->where('aduan1.pegawai',$ses);
         $query = $this->db->get();
   
         return $query->result();

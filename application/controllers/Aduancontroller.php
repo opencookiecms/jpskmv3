@@ -37,8 +37,9 @@ class Aduancontroller extends CI_Controller {
         $this->form_validation->set_rules('pengadu','Nama Pengadu','required');
 
         $data = array(
-            'formv' => 'v1',
+
             'getuser' => $this->Mainmodel->getUser()
+
         );
 
         if($this->form_validation->run() === FALSE)
@@ -47,7 +48,7 @@ class Aduancontroller extends CI_Controller {
             $this->load->view('based/header.php');
             $this->load->view('based/appheader.php');
             $this->load->view('based/nav.php');
-            $this->load->view('pages/aduan_form',$data);
+            $this->load->view('pages/aduan_form_satu',$data);
             $this->load->view('based/footer.php');
             $this->load->view('based/end.php');
         }
@@ -59,18 +60,33 @@ class Aduancontroller extends CI_Controller {
 
     }
 
-    public function addAduan2()
+    public function addAduan2($idm="")
     {
+        $ses = 1;
+        $this->form_validation->set_rules('ppengesyor','Pengesyor','required');
+
         $data = array(
-            'formv' => 'v2',
+            'aduan'=> $this->Amodel->getAduanSiasat($idm, $ses)
         );
 
-        $this->load->view('based/header.php');
-		$this->load->view('based/appheader.php');
-		$this->load->view('based/nav.php');
-        $this->load->view('pages/aduan_form',$data);
-        $this->load->view('based/footer.php');
-		$this->load->view('based/end.php');
+       
+       if ($this->form_validation->run() === FALSE) {
+
+            $this->load->view('based/header.php');
+            $this->load->view('based/appheader.php');
+            $this->load->view('based/nav.php');
+            $this->load->view('pages/aduan_form_dua',$data);
+            $this->load->view('based/footer.php');
+            $this->load->view('based/end.php');
+
+       } else {
+
+            $this->Amodel->aduancreatev2($data);
+            redirect(base_url('aduan')); 
+       }
+       
+
+
     }
 
     public function addAduan3()
