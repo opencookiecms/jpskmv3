@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2020 at 01:44 AM
+-- Generation Time: Aug 14, 2020 at 04:16 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.1.33
 
@@ -47,16 +47,43 @@ CREATE TABLE `aduan1` (
   `daerah` varchar(100) DEFAULT NULL,
   `kodaduan` varchar(100) DEFAULT NULL,
   `pegawai` int(11) DEFAULT NULL,
-  `tarikhmaju` varchar(100) DEFAULT NULL
+  `tarikhmaju` varchar(100) DEFAULT NULL,
+  `status` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `aduan1`
 --
 
-INSERT INTO `aduan1` (`aid`, `pengadu`, `nokp`, `emailpengadu`, `alamat`, `notel`, `aduantxt`, `tarikhaduan`, `tarikhsurat`, `jawatanpengadu`, `salinanaduan`, `sumber`, `lokasi`, `mukim`, `sungai`, `daerah`, `kodaduan`, `pegawai`, `tarikhmaju`) VALUES
-(1, 'Ridzam', '890214-02-5463', 'syed.m.afiq@outlool.com', 'test alamat', '0166255079', 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry\'s standard dummy text ever', '08/01/2020', '08/04/2020', 'Penghulu', 'Menteri Besar', 'Ibu Pejabat', 'Kuala Muda', 'Se', 'ee', 'Kuala Muda', 'AD9398223', 1, '08/11/2020'),
-(2, 'tetstetstet tetet etet', '890214-02-5463', 'syed.afiq@ttvision-tech.com', 'dfdffdfdfdf', '0166255079', 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the', '08/20/2020', '08/13/2020', 'Penghulu', 'Exco', 'Ibu Pejabat', 'Kuala Muda', 'Se', '  Charok Akar', 'Kuala Muda', 'AD9398223', 1, '08/20/2020');
+INSERT INTO `aduan1` (`aid`, `pengadu`, `nokp`, `emailpengadu`, `alamat`, `notel`, `aduantxt`, `tarikhaduan`, `tarikhsurat`, `jawatanpengadu`, `salinanaduan`, `sumber`, `lokasi`, `mukim`, `sungai`, `daerah`, `kodaduan`, `pegawai`, `tarikhmaju`, `status`) VALUES
+(1, 'Ridzam', '890214-02-5463', 'syed.m.afiq@outlool.com', 'test alamat', '0166255079', 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry\'s standard dummy text ever', '08/01/2020', '08/04/2020', 'Penghulu', 'Menteri Besar', 'Ibu Pejabat', 'Kuala Muda', 'Se', 'ee', 'Kuala Muda', 'AD9398223', 1, '08/11/2020', NULL),
+(2, 'tetstetstet tetet etet', '890214-02-5463', 'syed.afiq@ttvision-tech.com', 'dfdffdfdfdf', '0166255079', 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the', '08/20/2020', '08/13/2020', 'Penghulu', 'Exco', 'Ibu Pejabat', 'Kuala Muda', 'Se', '  Charok Akar', 'Kuala Muda', 'AD9398223', 1, '08/20/2020', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aduan2`
+--
+
+CREATE TABLE `aduan2` (
+  `bid` int(11) NOT NULL,
+  `tsiasat` varchar(50) DEFAULT NULL,
+  `kategoriaduan` varchar(50) DEFAULT NULL,
+  `lat` varchar(50) DEFAULT NULL,
+  `longs` varchar(50) DEFAULT NULL,
+  `kepentingan` varchar(50) DEFAULT NULL,
+  `tagensi` varchar(50) DEFAULT NULL,
+  `kesiriusan` varchar(50) DEFAULT NULL,
+  `cadangan` varchar(50) DEFAULT NULL,
+  `anggaran` varchar(50) DEFAULT NULL,
+  `ppenyiasat` varchar(150) DEFAULT NULL,
+  `ppenyemak` varchar(150) DEFAULT NULL,
+  `ppengesyor` varchar(150) DEFAULT NULL,
+  `emailpengesyor` varchar(150) DEFAULT NULL,
+  `aduan2tarikh` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `aduan1_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -2788,6 +2815,12 @@ ALTER TABLE `aduan1`
   ADD PRIMARY KEY (`aid`);
 
 --
+-- Indexes for table `aduan2`
+--
+ALTER TABLE `aduan2`
+  ADD PRIMARY KEY (`bid`);
+
+--
 -- Indexes for table `dp_gps`
 --
 ALTER TABLE `dp_gps`
@@ -2970,6 +3003,12 @@ ALTER TABLE `sijilsah`
 --
 ALTER TABLE `aduan1`
   MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `aduan2`
+--
+ALTER TABLE `aduan2`
+  MODIFY `bid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `dp_gps`
