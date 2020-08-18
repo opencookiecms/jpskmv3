@@ -24,222 +24,249 @@
 
         <!-- Row -->
         <div class="row">
-            <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                <!--aduan bahagia 1 -->
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <H4>Langkah 1</H4>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-10">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Borang Aduan</h4>
+                        <h3 class="card-title">Diisi oleh pengawai penyiasat</h3>
                     </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="card-title">Aduan Bahagian Satu</h4>
-                            </div>
-                         
-                            <div class="col-lg-9">
-                            <?php  echo form_open('aduan/b-aduan-satu') ?>
-                                <div class="row">
-                              
-                                    <div class="col-md-12">
-                                        <h4 class="mt-1 mb-4">Maklumat Pengadu</h4>
-                                    </div>
+                        <div class="card-pay">
+                            <ul class="tabs-menu nav">
+                                <li class=""><a href="#tab20" class="active" data-toggle="tab"><i
+                                            class="fa fa-credit-card"></i> Maklumat Pengadu</a></li>
+                                <li><a href="#tab21" data-toggle="tab" class="dsb"><i class="fa fa-paypal"></i> Dalam
+                                        Siasatan</a></li>
+                                <li><a href="#tab22" data-toggle="tab" class="dsb"><i class="fa fa-university"></i> Bank
+                                        Transfer</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="tab20">
+                                    <?php  echo form_open('aduan/b-aduan-satu') ?>
+                                    <div class="row">
 
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Nama Pengadu</label>
-                                            <input type="text" name="pengadu" value="" class="form-control" placeholder="cth: Ridzam bin Jusoh">
+                                        <div class="col-md-12">
+                                            <h4 class="mt-1 mb-4">Maklumat Pengadu</h4>
                                         </div>
-                                    </div>
 
-                                    <div class="col-sm-5 col-md-5">
-                                        <div class="form-group">
-                                            <label class="form-label">No Kad Pengenalan</label>
-                                            <input type="text" name="nokp" value="" class="form-control"
-                                            placeholder="78xxx-xx-xxxx">
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Nama Pengadu</label>
+                                                <input type="text" name="pengadu" value="" class="form-control"
+                                                    placeholder="cth: Ridzam bin Jusoh">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-sm-7 col-md-7">
-                                        <div class="form-group">
-                                            <label class="form-label">Email Pengadu</label>
-                                            <input type="text" name="emailpengadu" value="" class="form-control"
-                                              
-                                                placeholder="cth:zaki@gmail.com">
+                                        <div class="col-sm-5 col-md-5">
+                                            <div class="form-group">
+                                                <label class="form-label">No Kad Pengenalan</label>
+                                                <input type="text" name="nokp" value="" class="form-control"
+                                                    placeholder="78xxx-xx-xxxx">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Alamat</label>
-                                            <textarea class="form-control" name="alamat"></textarea>
+                                        <div class="col-sm-7 col-md-7">
+                                            <div class="form-group">
+                                                <label class="form-label">Email Pengadu</label>
+                                                <input type="text" name="emailpengadu" value="" class="form-control"
+                                                    placeholder="cth:zaki@gmail.com">
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Tarikh Aduan</label>
-                                            <input class="form-control fc-datepicker" name="tarikhaduan"
-                                                placeholder="MM/DD/YYYY" type="text">
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Alamat</label>
+                                                <textarea class="form-control" name="alamat"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Tarikh surat akuan Aduan</label>
-                                            <input class="form-control fc-datepicker" name="tarikhsurat"
-                                                placeholder="MM/DD/YYYY" type="text">
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Tarikh Aduan</label>
+                                                <input class="form-control fc-datepicker" name="tarikhaduan"
+                                                    placeholder="MM/DD/YYYY" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Jawatan Pengadu</label>
-                                            <select class="form-control custom-select select2" name="jawatanpengadu">
-                                                <option value="Tiada">Tiada Jawatan</option>
-                                                <option value="Penghulu">Penghulu</option>
-                                                <option value="Pengerusi JKKK">Pengerusi JKKK</option>
-                                                <option value="YB">YB</option>
-                                                <option value="Ketua Unit">Ketua Unit</option>
-                                                <option value="JKKK">JKKK</option>
-                                                <option value="Orang Awam">Orang Awam</option>
-                                                <option value="Penduduk">Penduduk</option>
-                                                <option value="Lain-lain">Lain-lain</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Salinan Aduan</label>
-                                            <select class="form-control custom-select select2" name="salinanaduan">
-                                                <option value="Tiada">Tiada Salinan Aduan</option>
-                                                <option value="Menteri Besar">Menteri Besar</option>
-                                                <option value="Exco">Exco</option>
-                                                <option value="ADUN">ADUN</option>
-                                                <option value="Pegawai Daerah">Pegawai Daerah</option>
 
-                                                <option value="Penghulu">Penghulu</option>
-                                                <option value="SPRM">SPRM"</option>
-                                                <option value="Persatuan Pengguna">Persatuan Pengguna</option>
-                                                <option value="Lain-lain">Lain-lain</option>
-                                            </select>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Tarikh surat akuan Aduan</label>
+                                                <input class="form-control fc-datepicker" name="tarikhsurat"
+                                                    placeholder="MM/DD/YYYY" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Sumber</label>
-                                            <select class="form-control custom-select select2" name="sumber">
-                                                <option value="Tiada">Tiada</option>
-                                                <option value="Ibu Pejabat">Ibu Pejabat</option>
-                                                <option value="Soalan Dewan">Soalan Dewan</option>
-                                                <option value="Telefon">Telefon</option>
-                                                <option value="Email">Email</option>
-                                                <option value="Datang Sendiri">Datang Sendiri</option>
-                                                <option value="Media Cetak">Media Cetak</option>
-                                                <option value="Surat">Surat</option>
-                                                <option value="Media Sosial">Media Sosial</option>
-                                                <option value="Lain-lain Agensi">Lain-lain Agensi</option>
-                                                <option value="Lain-lain">Lain-lain</option>
-                                            </select>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Jawatan Pengadu</label>
+                                                <select class="form-control custom-select select2"
+                                                    name="jawatanpengadu">
+                                                    <option value="Tiada">Tiada Jawatan</option>
+                                                    <option value="Penghulu">Penghulu</option>
+                                                    <option value="Pengerusi JKKK">Pengerusi JKKK</option>
+                                                    <option value="YB">YB</option>
+                                                    <option value="Ketua Unit">Ketua Unit</option>
+                                                    <option value="JKKK">JKKK</option>
+                                                    <option value="Orang Awam">Orang Awam</option>
+                                                    <option value="Penduduk">Penduduk</option>
+                                                    <option value="Lain-lain">Lain-lain</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6"></div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">No Telefon</label>
-                                            <input type="text" name="notel" value="" class="form-control"
-                                                placeholder="011-1234567">
-                                        </div>
-                                    </div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Salinan Aduan</label>
+                                                <select class="form-control custom-select select2" name="salinanaduan">
+                                                    <option value="Tiada">Tiada Salinan Aduan</option>
+                                                    <option value="Menteri Besar">Menteri Besar</option>
+                                                    <option value="Exco">Exco</option>
+                                                    <option value="ADUN">ADUN</option>
+                                                    <option value="Pegawai Daerah">Pegawai Daerah</option>
 
-                                    <div class="col-sm-12 col-md-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Aduan</label>
-                                            <textarea class="form-control" name="aduantxt"></textarea>
+                                                    <option value="Penghulu">Penghulu</option>
+                                                    <option value="SPRM">SPRM"</option>
+                                                    <option value="Persatuan Pengguna">Persatuan Pengguna</option>
+                                                    <option value="Lain-lain">Lain-lain</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Sumber</label>
+                                                <select class="form-control custom-select select2" name="sumber">
+                                                    <option value="Tiada">Tiada</option>
+                                                    <option value="Ibu Pejabat">Ibu Pejabat</option>
+                                                    <option value="Soalan Dewan">Soalan Dewan</option>
+                                                    <option value="Telefon">Telefon</option>
+                                                    <option value="Email">Email</option>
+                                                    <option value="Datang Sendiri">Datang Sendiri</option>
+                                                    <option value="Media Cetak">Media Cetak</option>
+                                                    <option value="Surat">Surat</option>
+                                                    <option value="Media Sosial">Media Sosial</option>
+                                                    <option value="Lain-lain Agensi">Lain-lain Agensi</option>
+                                                    <option value="Lain-lain">Lain-lain</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6"></div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">No Telefon</label>
+                                                <input type="text" name="notel" value="" class="form-control"
+                                                    placeholder="011-1234567">
+                                            </div>
+                                        </div>
 
-                                    <div class="col-md-12">
-                                        <h4 class="mt-1 mb-4">Lokasi Aduan</h4>
-                                    </div>
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Aduan</label>
+                                                <textarea class="form-control" name="aduantxt"></textarea>
+                                            </div>
+                                        </div>
 
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Lokasi</label>
-                                            <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                                name="lokasi">
+                                        <div class="col-md-12">
+                                            <h4 class="mt-1 mb-4">Lokasi Aduan</h4>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Mukim</label>
-                                            <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                                name="mukim">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Sungai</label>
-                                            <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                                name="sungai">
-                                        </div>
-                                    </div>
 
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Pegawai Penyiasat</label>
-                                            <select class="form-control custom-select select2" id="pegawaiemail" name="pegawai">
-                                                <option value="Tiada">Tiada</option>
-                                                <?php
-                                                    foreach($getuser as $row)
-                                                    {
-                                                        echo '<option value="'.$row->user_id.'">'.$row->jps_name.'</option>';
-                                                    } 
-                                                ?> 
-                                            </select>
+                                        <div class="col-sm-4 col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Lokasi</label>
+                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                    name="lokasi">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Email</label>
-                                            <select class="form-control custom-select select2" id="pemail"  name="emailpegawai">
-                                             
-                                            </select>
+                                        <div class="col-sm-4 col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Mukim</label>
+                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                    name="mukim">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Daerah</label>
-                                            <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                                name="daerah">
+                                        <div class="col-sm-4 col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Sungai</label>
+                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                    name="sungai">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Kod Aduan</label>
-                                            <input class="form-control" placeholder="eg:Kuala Muda" type="text"
-                                                name="kodaduan">
+
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Pegawai Penyiasat</label>
+                                                <select class="form-control custom-select select2" id="pegawaiemail"
+                                                    name="pegawai">
+                                                    <option value="Tiada">Tiada</option>
+                                                    <?php
+											  foreach($getuser as $row)
+											  {
+												  echo '<option value="'.$row->user_id.'">'.$row->jps_name.'</option>';
+											  } 
+										  ?>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Tarikh Majukan Kepada Pegawai</label>
-                                            <input class="form-control fc-datepicker" name="tarikhmaju"
-                                                placeholder="MM/DD/YYYY" type="text">
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Email</label>
+                                                <select class="form-control custom-select select2" id="pemail"
+                                                    name="emailpegawai">
+
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-3">
-                                         <input type="submit" name="submit" id="confirm" class="btn btn-primary" value="Save">
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Daerah</label>
+                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                    name="daerah">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6"></div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Kod Aduan</label>
+                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                    name="kodaduan">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6"></div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Tarikh Majukan Kepada Pegawai</label>
+                                                <input class="form-control fc-datepicker" name="tarikhmaju"
+                                                    placeholder="MM/DD/YYYY" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6"></div>
+                                        <div class="col-md-3">
+                                            <input type="submit" name="submit" id="confirm" class="btn btn-primary"
+                                                value="Save">
+                                        </div>
+                                        </form>
                                     </div>
                                     </form>
                                 </div>
+                                <div class="tab-pane" id="tab21">
+
+                                </div>
+                                <div class="tab-pane" id="tab22">
+
+                                </div>
                             </div>
-                           
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
+
+
         </div>
     </div>
 </div><!-- end app-content-->

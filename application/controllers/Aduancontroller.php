@@ -62,7 +62,7 @@ class Aduancontroller extends CI_Controller {
 
     public function addAduan2($idm="")
     {
-        $ses = 1;
+        $ses = 12;
         $this->form_validation->set_rules('ppengesyor','Pengesyor','required');
 
         $data = array(

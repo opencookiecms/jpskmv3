@@ -39,6 +39,7 @@ class Amodel extends CI_Model
         $this->db->select('*');
         $this->db->from('aduan1');
         $this->db->join('aduan2','aduan2.bid = aduan1.aid','left');
+        $this->db->join('jps_users','jps_users.user_id = aduan1.pegawai','left');
         $this->db->where('aduan1.aid',$idm);
         $this->db->where('aduan1.pegawai',$ses);
         $query = $this->db->get();

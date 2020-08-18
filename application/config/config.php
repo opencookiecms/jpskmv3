@@ -29,8 +29,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['base_url'] = 'http://localhost/jpskmv3/';
 //$config['base_url'] = 'http://localhost:8080/jpskmv3/';
-//$config['base_url'] = 'http://localhost/jpskmv3/';
-$config['base_url'] = 'http://localhost:8080/jpskmv3/';
 //$config['base_url'] = 'http://192.168.64.2/jpskmv3/';
 
 
