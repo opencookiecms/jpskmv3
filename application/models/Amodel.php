@@ -83,6 +83,16 @@ class Amodel extends CI_Model
 
         return $this->db->insert('aduan1', $data);
     }
+
+    public function aduancreatev2()
+    {
+
+    }
+
+    public function aduancreatev3()
+    {
+        
+    }
     
 
 }

@@ -89,9 +89,31 @@ class Aduancontroller extends CI_Controller {
 
     }
 
-    public function addAduan3()
+    public function addAduan3($idm="")
     {
+        $ses = 12;
+        $this->form_validation->set_rules('ulasasan','Sila beri sedikit ulasan','required');
 
+        $data = array(
+            'aduan'=> $this->Amodel->getAduanSiasat($idm, $ses)
+        );
+
+       
+       if ($this->form_validation->run() === FALSE) {
+
+            $this->load->view('based/header.php');
+            $this->load->view('based/appheader.php');
+            $this->load->view('based/nav.php');
+            $this->load->view('pages/aduan_form_tiga',$data);
+            $this->load->view('based/footer.php');
+            $this->load->view('based/end.php');
+
+       } else {
+
+            $this->Amodel->aduancreatev3($data);
+            redirect(base_url('aduan')); 
+       }
+       
     }
 
 

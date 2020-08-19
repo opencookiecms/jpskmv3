@@ -4,6 +4,10 @@ $(document).ready(function() {
 	$('.select2').select2({
 		minimumResultsForSearch: Infinity
 	});
+
+	$('.select221').select2({
+		minimumResultsForSearch: Infinity
+	});
 		
 	$('.select21').select2({
 		minimumResultsForSearch: Infinity,

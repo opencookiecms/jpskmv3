@@ -42,11 +42,11 @@
                     <div class="card-body">
                         <div class="card-pay">
                             <ul class="tabs-menu nav">
-                                <li class=""><a href="#tab20" class="" data-toggle="tab"><i class="fa fa-credit-card"></i> Maklumat Pengadu</a></li>
-                                <li><a href="#tab21" data-toggle="tab" class="active"><i class="fa fa-paypal"></i> Dalam
+                                <li class=""><a href="#tab20" class="" data-toggle="tab"><i
+                                            class="fa fa-credit-card"></i> Maklumat Pengadu</a></li>
+                                <li><a href="#tab21" data-toggle="tab" class=""><i class="fa fa-paypal"></i> Dalam
                                         Siasatan</a></li>
-                                <li><a href="#tab22" data-toggle="tab" class=""><i class="fa fa-university"></i> Bank
-                                        Transfer</a></li>
+                                <li><a href="#tab22" data-toggle="tab" class="active"><i class="fa fa-university"></i> Ulasan</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane" id="tab20">
@@ -206,11 +206,11 @@
                                                     name="pegawai">
                                                     <option value="Tiada">Tiada</option>
                                                     <?php
-											  foreach($getuser as $row)
-											  {
-												  echo '<option value="'.$row->user_id.'">'.$row->jps_name.'</option>';
-											  } 
-										  ?>
+                                                        foreach($getuser as $row)
+                                                        {
+                                                            echo '<option value="'.$row->user_id.'">'.$row->jps_name.'</option>';
+                                                        } 
+										            ?>
                                                 </select>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@
                                     </div>
 
                                 </div>
-                                <div class="tab-pane active show" id="tab21">
+                                <div class="tab-pane" id="tab21">
                                     <div class="row">
 
                                         <div class="col-md-12">
@@ -260,7 +260,7 @@
                                             <h5 class="mt-1 mb-4">(Diisi oleh pegawai penyiasat)</h6>
                                         </div>
 
-                                    
+
 
                                         <div class="col-sm-6 col-md-6 mt-4">
                                             <div class="form-group">
@@ -273,17 +273,17 @@
                                         <div class="col-sm-6 col-md-6 mt-4">
                                             <div class="form-group">
                                                 <label class="form-label">Kategori Aduan</label>
-                                                <select class="form-control custom-select select2"
-                                                    name="kategoriaduan">
+                                                <select class="form-control custom-select select2" name="kategoriaduan">
                                                     <option value="Tiada">Tiada</option>
                                                     <option value="Banjir">Banjir</option>
                                                     <option value="Hakisan Tebing">Hakisan Tebing</option>
                                                     <option value="Kerosakan Struktur">Kerosakan Struktur</option>
                                                     <option value="Kuari Pasir">Kuari Pasir</option>
-                                                    <option value="Pencerobohan Rizab Sungai">Pencerobohan Rizab Sungai</option>
+                                                    <option value="Pencerobohan Rizab Sungai">Pencerobohan Rizab Sungai
+                                                    </option>
                                                     <option value="Halangan Dalam Sungai">Halangan Dalam Sungai</option>
                                                     <option value="Lain-Lain">Lain-Lain</option>
-                                               
+
                                                 </select>
                                             </div>
                                         </div>
@@ -307,8 +307,7 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tindakan Jabatan / Agensi Lain</label>
-                                                <select class="form-control custom-select select2"
-                                                    name="tagensi">
+                                                <select class="form-control custom-select select2" name="tagensi">
                                                     <option value="Tiada">Tiada</option>
                                                     <option value="">Pilih Agensi Berkaitan</option>
                                                     <option value="JPS Negeri Kedah">JPS Negeri Kedah</option>
@@ -331,19 +330,18 @@
                                                     <option value="JPS BPME">Jabatan Alam Sekitar</option>
                                                     <option value="JPS BPME">Sada</option>
                                                     <option value="JPS BPME">TNB</option>
-                                                    <option value="Lain-Lain">Lain-Lain</option> 
+                                                    <option value="Lain-Lain">Lain-Lain</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6 col-md-6"></div>
 
-                                
+
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Kepentingan</label>
-                                                <select class="form-control custom-select select2"
-                                                    name="kepentingan">
+                                                <select class="form-control custom-select select2" name="kepentingan">
                                                     <option value="Tiada">Tiada</option>
                                                     <option value="Awam">Awam</option>
                                                     <option value="Individu">Individu</option>
@@ -353,13 +351,12 @@
                                         </div>
 
                                         <div class="col-sm-6 col-md-6"></div>
-                                
-                                    
+
+
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tahap Keseriusan</label>
-                                                <select class="form-control custom-select select2"
-                                                    name="kesiriusan">
+                                                <select class="form-control custom-select select2" name="kesiriusan">
                                                     <option value="Tiada">Tiada</option>
                                                     <option value="I">I</option>
                                                     <option value="II">II</option>
@@ -369,15 +366,15 @@
                                         </div>
 
                                         <div class="col-sm-6 col-md-6 mt-5">
-                                                <label class="form-label">Nota::</label>
-                                                <p>I - Sangat serius, perlukan tindakan segera</p>
-                                                <p>II -  Serdehana serius, perlukan tindakan segera</p>
-                                                <p>III - Kurang serius, perlukan tindakan</p>
+                                            <label class="form-label">Nota::</label>
+                                            <p>I - Sangat serius, perlukan tindakan segera</p>
+                                            <p>II - Serdehana serius, perlukan tindakan segera</p>
+                                            <p>III - Kurang serius, perlukan tindakan</p>
                                         </div>
 
 
                                         <div class="col-sm-6 col-md-6"></div>
-                                 
+
 
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
@@ -405,12 +402,12 @@
                                             </div>
                                         </div>
 
-                                   
-                                      
+
+
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Pegawai Penyemak</label>
-                                          
+
                                                 <select class="form-control custom-select select2" id="ppenyemak"
                                                     name="ppenyemak">
                                                     <option value="Tiada">Tiada</option>
@@ -424,11 +421,11 @@
                                             </div>
                                         </div>
 
-                                                 
+
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Pegawai Pengesyor</label>
-                                          
+
                                                 <select class="form-control custom-select select221" id="ppengesyor"
                                                     name="ppengesyor">
                                                     <option value="Tiada">Tiadas</option>
@@ -452,7 +449,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                      
+
                                         <div class="col-sm-6 col-md-6 mt-4">
                                             <div class="form-group">
                                                 <label class="form-label">Tarikh</label>
@@ -468,8 +465,8 @@
                                                 <label class="form-label">Status</label>
                                                 <input class="form-control" placeholder="eg:Kuala Muda" type="text"
                                                     name="status">
-                                                <input class="form-control" name="aduan1id" placeholder="eg:Kuala Muda" type="hidden"
-                                                    name="status">
+                                                <input class="form-control" name="aduan1id" placeholder="eg:Kuala Muda"
+                                                    type="hidden" name="status">
                                             </div>
                                         </div>
 
@@ -479,14 +476,27 @@
                                             <input type="submit" name="submit" id="confirm" class="btn btn-primary"
                                                 value="Save">
                                         </div>
-                                    
-                                     
+
+
 
 
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="tab22">
+                                <div class="tab-pane active show" id="tab22">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="mt-1 mb-4">Ulasan Pengawai Pengesyor</h4>
+                                          
+                                        </div>
 
+                                      
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Ulasan</label>
+                                                <textarea class="form-control" name="ulasan"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
