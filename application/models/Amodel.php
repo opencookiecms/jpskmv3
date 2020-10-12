@@ -86,7 +86,27 @@ class Amodel extends CI_Model
 
     public function aduancreatev2()
     {
+        $data = array(
 
+            'tsiasat' =>$this->input->post('tsiasat'),
+            'kategoriaduan' =>$this->input->post('kategoriaduan'),
+            'lat' =>$this->input->post('lat'),
+            'longs' =>$this->input->post('longs'),
+            'kepentingan' =>$this->input->post('kepentingan'),
+            'tagensi' =>$this->input->post('tagensi'),
+            'kesiriusan' =>$this->input->post('kesiriusan'),
+            'cadangan' =>$this->input->post('cadangan'),
+            'anggaran' =>$this->input->post('anggaran'),
+            'ppenyiasat' =>$this->input->post('ppenyiasat'),
+            'ppenyemak' =>$this->input->post('ppenyemak'),
+            'ppengesyor' =>$this->input->post('ppengesyor'),
+            'emailpengesyor' =>$this->input->post('emailpengesyor'),
+            'aduan2tarikh' =>$this->input->post('aduan2tarikh'),
+            'status' =>$this->input->post('status'),
+            'aduan1_id' =>$this->input->post('aduan1_id')
+        );
+
+        return $this->db->insert('aduan2',$data);
     }
 
     public function aduancreatev3()

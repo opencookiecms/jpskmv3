@@ -62,6 +62,7 @@ $route['aduan/b-aduan-tiga/(:num)'] = "Aduancontroller/addAduan3/$1";
 
 $route['login'] = 'Maincontroller/login';
 $route['kontraktor/cetak/(:num)'] = "Kontraktorcontroller/cetakkontrakotor/$1";
+$route['senarai-kontraktor'] = "Kontraktorcontroller/senaraiKontraktor";
 $route['kontraktor-detail/(:num)'] = "Kontraktorcontroller/kdetail/$1";
 $route['kontraktor-update/(:num)'] = "Kontraktorcontroller/kupdate/$1";
 $route['maklumat-kontraktor/(:num)'] = "Kontraktorcontroller/kform/$1";

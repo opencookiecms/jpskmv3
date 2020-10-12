@@ -54,7 +54,7 @@ class Aduancontroller extends CI_Controller {
         }
         else
         {
-            $this->Amodel->aduancreatev1($data);
+            $this->Amodel->aduancreatev1();
 			redirect(base_url('aduan')); 
         }
 
@@ -81,7 +81,7 @@ class Aduancontroller extends CI_Controller {
 
        } else {
 
-            $this->Amodel->aduancreatev2($data);
+            $this->Amodel->aduancreatev2();
             redirect(base_url('aduan')); 
        }
        

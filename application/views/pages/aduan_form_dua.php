@@ -45,8 +45,7 @@
                                 <li class=""><a href="#tab20" class="" data-toggle="tab"><i class="fa fa-credit-card"></i> Maklumat Pengadu</a></li>
                                 <li><a href="#tab21" data-toggle="tab" class="active"><i class="fa fa-paypal"></i> Dalam
                                         Siasatan</a></li>
-                                <li><a href="#tab22" data-toggle="tab" class=""><i class="fa fa-university"></i> Bank
-                                        Transfer</a></li>
+                    
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane" id="tab20">
@@ -61,7 +60,7 @@
                                             <div class="form-group">
                                                 <label class="form-label">Nama Pengadu</label>
                                                 <input type="text" name="pengadu" readonly
-                                                    value="<?php echo $aduan[0]->pengadu ?>" class="form-control"
+                                                       value="<?php echo $aduan[0]->pengadu ?>" class="form-control"
                                                     placeholder="cth: Ridzam bin Jusoh">
                                             </div>
                                         </div>
@@ -69,7 +68,7 @@
                                         <div class="col-sm-5 col-md-5">
                                             <div class="form-group">
                                                 <label class="form-label">No Kad Pengenalan</label>
-                                                <input type="text" name="nokp" value="" class="form-control"
+                                                <input type="text" name="nokp" value="<?php echo $aduan[0]->nokp ?>" readonly class="form-control"
                                                     placeholder="78xxx-xx-xxxx">
                                             </div>
                                         </div>
@@ -77,7 +76,7 @@
                                         <div class="col-sm-7 col-md-7">
                                             <div class="form-group">
                                                 <label class="form-label">Email Pengadu</label>
-                                                <input type="text" name="emailpengadu" value="" class="form-control"
+                                                <input type="text" name="emailpengadu" readonly value="<?php echo $aduan[0]->emailpengadu ?>" class="form-control"
                                                     placeholder="cth:zaki@gmail.com">
                                             </div>
                                         </div>
@@ -85,14 +84,14 @@
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <label class="form-label">Alamat</label>
-                                                <textarea class="form-control" name="alamat"></textarea>
+                                                <textarea class="form-control" readonly name="alamat"><?php echo $aduan[0]->alamat ?></textarea>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tarikh Aduan</label>
-                                                <input class="form-control fc-datepicker" name="tarikhaduan"
+                                                <input class="form-control fc-datepicker" readonly value="<?php echo $aduan[0]->tarikhaduan ?>" name="tarikhaduan"
                                                     placeholder="MM/DD/YYYY" type="text">
                                             </div>
                                         </div>
@@ -100,16 +99,16 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tarikh surat akuan Aduan</label>
-                                                <input class="form-control fc-datepicker" name="tarikhsurat"
+                                                <input class="form-control fc-datepicker" readonly value="<?php echo $aduan[0]->tarikhsurat ?>" name="tarikhsurat"
                                                     placeholder="MM/DD/YYYY" type="text">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Jawatan Pengadu</label>
-                                                <select class="form-control custom-select select2"
-                                                    name="jawatanpengadu">
-                                                    <option value="Tiada">Tiada Jawatan</option>
+                                                <select class="form-control custom-select select231"
+                                                    name="jawatanpengadu" readonly>
+                                                    <option value="<?php echo $aduan[0]->jawatanpengadu ?>"><?php echo $aduan[0]->jawatanpengadu ?></option>
                                                     <option value="Penghulu">Penghulu</option>
                                                     <option value="Pengerusi JKKK">Pengerusi JKKK</option>
                                                     <option value="YB">YB</option>
@@ -124,8 +123,8 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Salinan Aduan</label>
-                                                <select class="form-control custom-select select2" name="salinanaduan">
-                                                    <option value="Tiada">Tiada Salinan Aduan</option>
+                                                <select class="form-control custom-select select231" name="salinanaduan">
+                                                    <option value="<?php echo $aduan[0]->salinanaduan ?>"><?php echo $aduan[0]->salinanaduan ?></option>
                                                     <option value="Menteri Besar">Menteri Besar</option>
                                                     <option value="Exco">Exco</option>
                                                     <option value="ADUN">ADUN</option>
@@ -141,8 +140,8 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Sumber</label>
-                                                <select class="form-control custom-select select2" name="sumber">
-                                                    <option value="Tiada">Tiada</option>
+                                                <select class="form-control custom-select select232" name="sumber">
+                                                    <option value="<?php echo $aduan[0]->sumber ?>"><?php echo $aduan[0]->sumber ?></option>
                                                     <option value="Ibu Pejabat">Ibu Pejabat</option>
                                                     <option value="Soalan Dewan">Soalan Dewan</option>
                                                     <option value="Telefon">Telefon</option>
@@ -160,7 +159,7 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">No Telefon</label>
-                                                <input type="text" name="notel" value="" class="form-control"
+                                                <input type="text" name="notel" readonly value="<?php echo $aduan[0]->notel ?>" class="form-control"
                                                     placeholder="011-1234567">
                                             </div>
                                         </div>
@@ -168,7 +167,7 @@
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <label class="form-label">Aduan</label>
-                                                <textarea class="form-control" name="aduantxt"></textarea>
+                                                <textarea class="form-control" readonly name="aduantxt"><?php echo $aduan[0]->aduantxt ?></textarea>
                                             </div>
                                         </div>
 
@@ -179,21 +178,21 @@
                                         <div class="col-sm-4 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Lokasi</label>
-                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                <input class="form-control" readonly value="<?php echo $aduan[0]->lokasi ?>" placeholder="eg:Kuala Muda" type="text"
                                                     name="lokasi">
                                             </div>
                                         </div>
                                         <div class="col-sm-4 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Mukim</label>
-                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                <input class="form-control" readonly placeholder="eg:Kuala Muda" type="text"
                                                     name="mukim">
                                             </div>
                                         </div>
                                         <div class="col-sm-4 col-md-4">
                                             <div class="form-group">
                                                 <label class="form-label">Sungai</label>
-                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                <input class="form-control" readonly value="<?php echo $aduan[0]->sungai ?>" placeholder="eg:Kuala Muda" type="text"
                                                     name="sungai">
                                             </div>
                                         </div>
@@ -201,32 +200,21 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Pegawai Penyiasat</label>
-                                                <?php echo $aduan[0]->jps_name ?>
-                                                <select class="form-control custom-select select2" id="pegawaiemail"
-                                                    name="pegawai">
-                                                    <option value="Tiada">Tiada</option>
-                                                    <?php
-											  foreach($getuser as $row)
-											  {
-												  echo '<option value="'.$row->user_id.'">'.$row->jps_name.'</option>';
-											  } 
-										  ?>
-                                                </select>
+                                         
+                                                <input class="form-control" readonly value="<?php echo $aduan[0]->jps_name ?>"  type="text">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
+                                          
                                                 <label class="form-label">Email</label>
-                                                <select class="form-control custom-select select2" id="pemail"
-                                                    name="emailpegawai">
-
-                                                </select>
+                                                <input class="form-control" readonly value="<?php echo $aduan[0]->jps_email ?>"  type="text">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Daerah</label>
-                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                <input class="form-control" placeholder="eg:Kuala Muda" readonly value="<?php echo $aduan[0]->daerah ?>"  type="text"
                                                     name="daerah">
                                             </div>
                                         </div>
@@ -234,7 +222,7 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Kod Aduan</label>
-                                                <input class="form-control" placeholder="eg:Kuala Muda" type="text"
+                                                <input class="form-control" readonly value="<?php echo $aduan[0]->kodaduan ?>"  placeholder="eg:Kuala Muda" type="text"
                                                     name="kodaduan">
                                             </div>
                                         </div>
@@ -242,7 +230,7 @@
                                         <div class="col-sm-6 col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tarikh Majukan Kepada Pegawai</label>
-                                                <input class="form-control fc-datepicker" name="tarikhmaju"
+                                                <input class="form-control fc-datepicker" readonly value="<?php echo $aduan[0]->tarikhmaju ?>"  name="tarikhmaju"
                                                     placeholder="MM/DD/YYYY" type="text">
                                             </div>
                                         </div>
@@ -252,9 +240,12 @@
                                     </div>
 
                                 </div>
+                           
                                 <div class="tab-pane active show" id="tab21">
+                                <?php  echo form_open('aduan/b-aduan-dua/'.$aduan[0]->aid); ?>
                                     <div class="row">
-
+                                 
+                                    <input type="hidden" name="aduan1_id" value="<?php echo $aduan[0]->aid ?>" class="form-control">
                                         <div class="col-md-12">
                                             <h4 class="mt-1 mb-4">Kegunaan Pejabat</h4>
                                             <h5 class="mt-1 mb-4">(Diisi oleh pegawai penyiasat)</h6>
@@ -310,7 +301,7 @@
                                                 <select class="form-control custom-select select2"
                                                     name="tagensi">
                                                     <option value="Tiada">Tiada</option>
-                                                    <option value="">Pilih Agensi Berkaitan</option>
+                                                    <option value="Pilih Agensi Berkaitan">Pilih Agensi Berkaitan</option>
                                                     <option value="JPS Negeri Kedah">JPS Negeri Kedah</option>
                                                     <option value="JPS PLSM/Mekanikal">JPS PLSM/Mekanikal</option>
                                                     <option value="JPS Kuala Muda"></option>
@@ -482,7 +473,7 @@
                                     
                                      
 
-
+                                    </form>
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="tab22">

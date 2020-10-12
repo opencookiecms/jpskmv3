@@ -44,16 +44,14 @@
                             <ul class="tabs-menu nav">
                                 <li class=""><a href="#tab20" class="active" data-toggle="tab"><i
                                             class="fa fa-credit-card"></i> Maklumat Pengadu</a></li>
-                                <li><a href="#tab21" data-toggle="tab" class="dsb"><i class="fa fa-paypal"></i> Dalam
-                                        Siasatan</a></li>
-                                <li><a href="#tab22" data-toggle="tab" class="dsb"><i class="fa fa-university"></i> Bank
-                                        Transfer</a></li>
+                               
+                            
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active show" id="tab20">
                                     <?php  echo form_open('aduan/b-aduan-satu') ?>
                                     <div class="row">
-
+                                    
                                         <div class="col-md-12">
                                             <h4 class="mt-1 mb-4">Maklumat Pengadu</h4>
                                         </div>

@@ -16,6 +16,21 @@ class Kontraktorcontroller extends CI_Controller {
 	
     public function index()
     {
+		$context = array(
+			'count' => $this->Kmodel->kcount(),
+			'countgi'=>$this->Kmodel->kcountg1()
+		);
+
+		$this->load->view('based/header.php');
+		$this->load->view('based/appheader.php');
+		$this->load->view('based/nav.php');
+		$this->load->view('pages/kontraktor_dashboard.php',$context);
+		$this->load->view('based/footer.php');
+		$this->load->view('based/end.php');
+	}
+
+	public function senaraiKontraktor()
+	{
 		$data['get_kontraktor']=$this->Kmodel->getKontraktor();
 		$data['get_count']=$this->Kmodel->ktotal();
 

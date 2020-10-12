@@ -5,6 +5,21 @@ $(document).ready(function() {
 		minimumResultsForSearch: Infinity
 	});
 
+	$('.select231').select2({
+		minimumResultsForSearch: Infinity,
+		width: 400
+	});
+
+	$('.select232').select2({
+		minimumResultsForSearch: Infinity,
+		width: 400
+	});
+
+	$('.select233').select2({
+		minimumResultsForSearch: Infinity,
+		width: 400
+	});
+
 	$('.select221').select2({
 		minimumResultsForSearch: Infinity
 	});

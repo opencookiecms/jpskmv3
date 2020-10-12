@@ -356,8 +356,33 @@ class Kmodel extends CI_Model {
    public function kcount()
    {
    
-     $this->db->select("konKawOperasi, COUNT(*) AS TOTAL, COUNT(IF(konKawOperasi='Kuala Muda',1,null)) AS km, COUNT(IF(konKawOperasi='Baling',1,null)) AS baling, COUNT(IF(konKawOperasi='Sik',1,null)) AS sik");
+     $this->db->select("
+     COUNT(*) AS TOTAL,
+     COUNT(IF(CURRENT_TIME < sijilJPSTamat,1,null)) AS daftar, 
+     COUNT(IF(konKawOperasi='Kuala Muda',1,null)) AS km, 
+     COUNT(IF(konKawOperasi='Baling',1,null)) AS baling,
+     COUNT(IF(konKawOperasi='Kedah',1,null)) AS kedah, 
+     COUNT(IF(konKawOperasi='Malaysia',1,null)) AS malaysia, 
+     COUNT(IF(konKawOperasi='Sik' ,1,null)) AS sik");
      $this->db->from('kontraktor');
+     $query = $this->db->get();
+     return $query->result();
+   
+   }
+
+   public function kcountg1()
+   {
+   
+     $this->db->select("
+     COUNT(*) AS TOTAL,
+     COUNT(IF(CURRENT_TIME < sijilJPSTamat,1,null)) AS daftar, 
+     COUNT(IF(konKawOperasi='Kuala Muda',1,null)) AS km, 
+     COUNT(IF(konKawOperasi='Baling',1,null)) AS baling,
+     COUNT(IF(konKawOperasi='Kedah',1,null)) AS kedah, 
+     COUNT(IF(konKawOperasi='Malaysia',1,null)) AS malaysia, 
+     COUNT(IF(konKawOperasi='Sik' ,1,null)) AS sik");
+     $this->db->from('kontraktor');
+     $this->db->where('sijilPPKGredOne','G1');
      $query = $this->db->get();
      return $query->result();
    
