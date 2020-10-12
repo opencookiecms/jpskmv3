@@ -52,15 +52,6 @@ class Kmodel extends CI_Model {
      return $c;
    }
 
-   public function kdaftartotal()
-   {
-
-   }
-   public function kxdaftartotal()
-   {
-
-   }
-
    ///Add kontraktor
 
    public function kaddProcess($data="")
@@ -333,16 +324,11 @@ class Kmodel extends CI_Model {
          'sijilJPSSah'=>$this->input->post('jpssah'),
          'sijilJPSTamat'=>$this->input->post('jpstamat'),
          'sijilJPSKate'=>$this->input->post('jpsgred'),
-         'kontraktorId' => $this->input->post('hiddenid')
-
-       
+         'kontraktorId' => $this->input->post('hiddenid')   
      );
 
      $this->db->where('kontraktorId', $id);
-
      $this->db->update('kontraktor', $context);
-
-
    }
 
    public function searchKontraktor($daerah)
@@ -367,9 +353,14 @@ class Kmodel extends CI_Model {
       return $query->result();
    }
 
-   public function kdeleteProcess()
+   public function kcount()
    {
-        
+   
+     $this->db->select("konKawOperasi, COUNT(*) AS TOTAL, COUNT(IF(konKawOperasi='Kuala Muda',1,null)) AS km, COUNT(IF(konKawOperasi='Baling',1,null)) AS baling, COUNT(IF(konKawOperasi='Sik',1,null)) AS sik");
+     $this->db->from('kontraktor');
+     $query = $this->db->get();
+     return $query->result();
+   
    }
 
 
